@@ -1,2 +1,1 @@
-# Metadata-Tagging
-An application that tags audio metadata
+# React-Redux-Skeleton

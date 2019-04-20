@@ -20,6 +20,20 @@ module.exports = {
         'css-loader',
         'sass-loader'
       ]
+    },
+    {
+      test: /\.svg$/,
+      loader: 'svg-inline-loader'
+    },
+    {
+      test: /\.(png|jpg)$/,
+      loader: 'url-loader?limit=8192'
+    },
+    {
+      test: /\.(woff|woff2|eot|ttf|otf)$/,
+      use: [
+        'file-loader'
+      ]
     }]
   },
   devtool: 'cheap-module-source-map',
@@ -28,5 +42,6 @@ module.exports = {
     historyApiFallback: true
   },
   resolve: {
-    modules: [path.resolve(__dirname, "app"), "node_modules"]}
+    modules: [path.resolve(__dirname, "app"), "node_modules"]
+  }
 };

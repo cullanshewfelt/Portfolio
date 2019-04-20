@@ -1,0 +1,47 @@
+
+.linkedin-icon{
+  float: right;
+  height: 3rem;
+  margin: 0px 5% 0px 2.5%;
+  width: auto;
+}
+
+.github-icon{
+  float: right;
+  height: 3rem;
+  margin: 0px 2.5% 0px 2.5%;
+  width: auto;
+}
+
+.email-icon{
+  float: right;
+  height: 3rem;
+  margin: 0px 2.5% 0px 2.5%;
+  width: auto;
+}
+
+.footer{
+  bottom: 0;
+  padding: 2% 0% 2%;
+  // height: 5%;
+  width: 100%;
+  position: fixed;
+  opacity: 0%;
+  background-color: black;
+  border-style: inset;
+  border-color: $retro-pink;
+}
+
+.footer-note{
+  padding-top: 30px;
+  color: $retro-pink;
+  text-align: center;
+  font-size: 16px;
+}
+
+
+@media only screen and (max-width: 600px){
+  .footer{
+    // visibility: hidden;
+  }
+}

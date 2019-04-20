@@ -1,3 +1,12 @@
+@charset "utf-8";
+@import "../../node_modules/bulma/bulma.sass";
+
 @import './base/settings';
 @import './base/base';
-@import './components/dashboard';
+@import './base/fonts';
+
+// @import './components/dashboard';
+@import '../components/Dashboard/dashboard';
+@import '../components/SubComponents/Header/header';
+@import '../components/SubComponents/Footer/footer';
+@import '../components/Portfolio/portfolio';

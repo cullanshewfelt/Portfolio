@@ -1,0 +1,160 @@
+
+.navbar{
+  background-color: black;
+  // bottom: 0;
+  // padding: 2% 0% 2%;
+  width: 100%;
+  border-style: inset;
+  border-color: $retro-pink;
+}
+
+
+.navbar-brand{
+  min-height: 10%;
+  padding: 2% 0% 1%;
+}
+
+.navbar-menu{
+  background-color:black;
+}
+
+.navbar-item{
+  font-family: Gtek;
+}
+
+.navbar-burger{
+  background-color: black;
+  color: $retro-pink;
+  border-color: $retro-pink;
+  // padding: 0px 0 16 16px;
+  margin-top: 4px;
+  margin-right: 18px;
+  margin-bottom: 0px;
+}
+
+
+
+a.navbar-item:hover{
+  background-color: $retro-pink;
+  color: black;
+}
+
+.navbar-item-open{
+  background-color: black;
+  color: $retro-pink;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.navbar-item-close{
+  color: $retro-pink;
+  padding-top: 12px;
+  padding-bottom: 0px;
+  margin-top: 60px;
+  margin-bottom: 0px;
+}
+
+.button.is-active {
+    border-color: $retro-pink;
+    color: $retro-pink;
+}
+
+
+.button.is-hovered, .button:hover {
+  border-color: $retro-pink;
+  color: $retro-pink;
+}
+
+
+
+
+// FONTS
+
+
+
+
+
+.Spac3_Neon{ // my favorite
+  color: $retro-pink;
+  font-family: Spac3_Neon;
+  font-size: 44px;
+  padding: 0px 16px 0 24px;
+  margin-bottom: 0px;
+  margin-right: 16px;
+}
+
+.Spac3_Tech{
+  color: $retro-pink;
+  font-family: Spac3_Tech;
+  font-size: 44px;
+  padding: 0px 16px 0 24px;
+  margin-bottom: 0px;
+  margin-right: 16px;
+}
+
+.neptune{
+  font-family: Neptune;
+  font-size: 44px;
+  padding: 0px 16px 0 16px;
+}
+
+.Trench{
+  color: $retro-pink;
+  font-family: Trench;
+  font-size: 36px;
+  padding: 0px 16px 0 16px;
+}
+
+
+
+
+.Twolines{
+  color: $retro-pink;
+  font-family: Twolines;
+  font-size: 44px;
+  margin-left: 18px;
+  margin-top: 0px;
+  margin-bottom: 4px;
+}
+
+.AndromedaEclipsis{
+  color: $retro-pink;
+  font-family: AndromedaEclipsis;
+  font-size: 60px;
+  margin-left: 18px;
+  margin-top: 0px;
+  margin-bottom: 4px;
+  margin-right: 16px;
+}
+
+.barcade{
+  color: $retro-pink;
+  font-family: barcade;
+  font-size: 44px;
+  margin-left: 18px;
+  margin-top: 0px;
+  margin-bottom: 4px;
+  margin-right: 16px;
+}
+
+.Earth-Orbiter{
+  color: $retro-pink;
+  font-family: Earth-Orbiter;
+  font-size: 44px;
+  margin-left: 18px;
+  margin-top: 0px;
+  margin-bottom: 4px;
+  margin-right: 16px;
+
+}
+
+.Gravedigger{
+  font-family: Gravedigger;
+  font-size: 44px;
+  margin-left: 18px;
+  margin-top: 0px;
+  margin-bottom: 4px;
+
+}

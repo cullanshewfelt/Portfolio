@@ -1,0 +1,95 @@
+html {
+  color: $retro-pink;
+  height: 100%;
+  // overflow: hidden;
+}
+
+body {
+  font-size: 20px;
+  height: 100%;
+}
+
+.tile.is-child{
+  z-index: 3;
+  margin: 20px 10px 0 10px !important;
+  color: black !important;
+  background-color: $retro-pink !important;
+}
+
+
+
+.dashboard {
+  width: 100%;
+  // position: absolute;
+  // bottom: 0;
+  // left: 0;
+}
+
+.dashboard:after {
+  z-index: 0;
+  -webkit-mask-image: -webkit-gradient(linear, left 90%, left top, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+  mask-image: gradient(linear, left 90%, left top, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+	transform: perspective(400px) rotateX(40deg) scale(2,1) translateZ(0);
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  padding: 1px;
+  -webkit-background-clip: content-box;
+  -webkit-backface-visibility: hidden;
+  outline: 1px solid transparent;
+  transform-origin: bottom center;
+  will-change: transform;
+   background-attachment: fixed;
+}
+
+.dashboard:after {
+  background-position: center bottom;
+  background-size: 40px 40px;
+  background-image:
+  linear-gradient(to right, $retro-purps 1px, transparent 2px),
+  linear-gradient(to bottom, $retro-purps 1px, transparent 2px);
+   background-attachment: fixed;
+}
+
+
+// Anurati
+// Azonix
+// Blanka
+// Dual-300
+// Halogen
+// Gravedigger
+// Gtek
+// Neptune
+// Rock_Rinder
+// Spac3_Neon
+// Spac3_Tech
+// Trench
+
+
+.loading {
+  display: block;
+  margin: auto;
+  width: 50%;
+  text-align: center;
+  border-color: red;
+}
+
+.selected{
+  background: $hover-gray;
+}
+
+
+
+::-webkit-scrollbar { // MAKES SCROLLBAR TRANSPARENT
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+}
+
+.scrollableDiv {
+   overflowY: hidden;
+}
