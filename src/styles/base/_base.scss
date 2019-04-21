@@ -1,5 +1,6 @@
 document.body {
-  background-color: black;
+  background: rgb(255,128,0);
+  background: radial-gradient(circle, rgba(255,128,0,1) 0%, rgba(121,44,228,1) 100%);
 }
 
 html, body {
@@ -7,4 +8,53 @@ html, body {
     min-height: 100%;
     margin: 0;
     padding: 0;
+}
+
+.has-navbar-fixed-top{
+  padding-top: 12%;
+}
+
+.dashboard {
+  height: 100%;
+  width: 100%;
+  background: rgb(255,103,0);
+  background: radial-gradient(circle, rgba(255,103,0,1) -14%, rgba(18,0,123,1) 33%, rgba(0,0,0,1) 98%);
+  background-attachment: fixed;
+}
+
+.dashboard:after {
+  z-index: 0;
+  -webkit-mask-image: -webkit-gradient(linear, left 90%, left top, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+  mask-image: gradient(linear, left 90%, left top, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+	transform: perspective(400px) rotateX(40deg) scale(2,2) translateZ(0);
+  content: "";
+  display: block;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  padding: 1px;
+  -webkit-background-clip: content-box;
+  -webkit-backface-visibility: hidden;
+  outline: 1px solid transparent;
+  transform-origin: bottom center;
+  will-change: transform;
+  background-attachment: fixed;
+}
+
+.dashboard:after {
+  background-position: center bottom;
+  background-size: 40px 40px;
+  background-image:
+  linear-gradient(to right, $retro-purps 1px, transparent 2px),
+  linear-gradient(to bottom, $retro-purps 1px, transparent 2px);
+   background-attachment: fixed;
+}
+
+@media only screen and (max-width: 768px) {
+  .has-navbar-fixed-top{
+    padding-top: 16%;
+  }
 }

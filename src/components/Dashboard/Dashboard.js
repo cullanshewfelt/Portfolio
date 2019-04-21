@@ -8,7 +8,7 @@ import {initializeData} from '../../actions/dataActions';
 const Dashboard = () => {
   document.title = 'Cullan Shewfelt | Web Developer';
     return (
-      <div className='dashboard'>
+      <div className='dashboard has-navbar-fixed-top'>
         <div className="tile is-ancestor">
           <div className="tile is-vertical is-8">
             <div className="tile">
@@ -36,13 +36,16 @@ const Dashboard = () => {
             <article className="tile is-child notification is-primary">
               <div className="content">
                 <p className="title">Languages</p>
-                <p className="subtitle">And Skills</p>
+                {/* <p className="subtitle">And Skills</p> */}
                 <div className="content">
                   <ul>
                     <li>JavaScript</li>
                     <li>ReactJs</li>
+                    <li>node.js</li>
+                    <li>SQL</li>
                     <li>Redux</li>
-
+                    <li>Mongo</li>
+                    <li>SASS</li>
                   </ul>
                 </div>
               </div>
