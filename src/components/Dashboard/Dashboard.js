@@ -35,8 +35,8 @@ const Dashboard = () => {
           <div className="tile is-parent">
             <article className="tile is-child notification is-primary">
               <div className="content">
-                <p className="title">Languages</p>
-                {/* <p className="subtitle">And Skills</p> */}
+                <h3 className="title">Languages & Frameworks</h3>
+                {/* <p className="subtitle">And Frameworks</p> */}
                 <div className="content">
                   <ul>
                     <li>JavaScript</li>

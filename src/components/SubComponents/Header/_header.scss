@@ -18,9 +18,73 @@
   background-color:black;
 }
 
-.navbar-item{
+.navbar-item-text{
   font-family: Gtek;
 }
+
+.gtek{
+  color: $retro-pink;
+  font-family: Gravedigger;
+  margin-top: 16px;
+  margin-left: -16px;
+}
+
+.Spac3_Neon{ // my favorite
+  color: $retro-pink;
+  font-family: Spac3_Neon;
+  font-size: 44px;
+  padding: 0px 16px 0 24px;
+  margin-bottom: 0px;
+  margin-right: 16px;
+}
+
+@media only screen and (min-width: 1088px) {
+  .gtek {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 788px) {
+  .gtek {
+    margin-top: 20px;
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .gtek {
+    margin-top: 24px;
+    margin-left: 0;
+    font-size: 13px;
+  }
+  .Spac3_Neon{ // my favorite
+    color: $retro-pink;
+    font-family: Spac3_Neon;
+    font-size: 44px;
+    // padding: 0px 8px 0 16px;
+    padding: 0 0 0 8px;
+    margin-bottom: 0px;
+    margin-right: 8px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .gtek {
+    margin-top: 22px;
+    margin-left: 0;
+    font-size: 12px;
+  }
+  .Spac3_Neon { // my favorite
+    color: $retro-pink;
+    font-family: Spac3_Neon;
+    font-size: 44px;
+    // padding: 0px 8px 0 16px;
+    padding: 0 0 0 8px;
+    margin-bottom: 0px;
+    margin-right: 8px;
+  }
+}
+
 
 .navbar-burger{
   background-color: black;
@@ -47,6 +111,9 @@ a.navbar-item:hover{
   margin-top: 0px;
   margin-bottom: 0px;
 }
+
+
+
 
 .navbar-item-close{
   color: $retro-pink;
@@ -76,14 +143,7 @@ a.navbar-item:hover{
 
 
 
-.Spac3_Neon{ // my favorite
-  color: $retro-pink;
-  font-family: Spac3_Neon;
-  font-size: 44px;
-  padding: 0px 16px 0 24px;
-  margin-bottom: 0px;
-  margin-right: 16px;
-}
+
 
 .Spac3_Tech{
   color: $retro-pink;
@@ -157,4 +217,9 @@ a.navbar-item:hover{
   margin-top: 0px;
   margin-bottom: 4px;
 
+}
+
+.selected{
+  background-color: $retro-pink;
+  color: black;
 }

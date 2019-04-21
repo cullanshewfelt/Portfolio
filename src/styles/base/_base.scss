@@ -1,6 +1,6 @@
 document.body {
-  background: rgb(255,128,0);
-  background: radial-gradient(circle, rgba(255,128,0,1) 0%, rgba(121,44,228,1) 100%);
+  // background: rgb(255,128,0);
+  // background: radial-gradient(circle, rgba(255,128,0,1) 0%, rgba(121,44,228,1) 100%);
 }
 
 html, body {
@@ -18,7 +18,8 @@ html, body {
   height: 100%;
   width: 100%;
   background: rgb(255,103,0);
-  background: radial-gradient(circle, rgba(255,103,0,1) -14%, rgba(18,0,123,1) 33%, rgba(0,0,0,1) 98%);
+  // background: $orangeToPurp;
+  background: $orangeToBlue;
   background-attachment: fixed;
 }
 
@@ -48,8 +49,8 @@ html, body {
   background-position: center bottom;
   background-size: 40px 40px;
   background-image:
-  linear-gradient(to right, $retro-purps 1px, transparent 2px),
-  linear-gradient(to bottom, $retro-purps 1px, transparent 2px);
+  linear-gradient(to right, $retro-pink 1px, transparent 2px),
+  linear-gradient(to bottom, $retro-pink 1px, transparent 2px);
    background-attachment: fixed;
 }
 

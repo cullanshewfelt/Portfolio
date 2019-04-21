@@ -10,6 +10,7 @@ const Header = () => {
     <nav className="navbar is-fixed-top" role="navigation" aria-label="main navigation">
       <div className="navbar-brand">
         <div className='Spac3_Neon'>c s</div>
+        <div className='gtek'>{!isHamburgerOpen ? ' - cullan shewfelt': ''}</div>
         <button
           onClick={() => toggleHamburger(!isHamburgerOpen)}
           className={`button navbar-burger ${isHamburgerOpen ? 'is-active' : ''}`}
@@ -23,16 +24,22 @@ const Header = () => {
         className={`navbar-menu ${isHamburgerOpen ? 'is-active' : ''}`}
       >
         <div className="navbar-start">
-          <div className={`navbar-item ${isHamburgerOpen ? 'navbar-item-open' : 'navbar-item-close'}`}>
-            cullan shewfelt | developer
+          <div className={`navbar-item navbar-item-text ${isHamburgerOpen ? 'navbar-item-open' : 'navbar-item-close'}`}>
+            cullan - shewfelt
           </div>
-          <NavLink className={`navbar-item ${isHamburgerOpen ? 'navbar-item-open' : 'navbar-item-close'}`} to='/' onClick={() => {isHamburgerOpen && toggleHamburger(!isHamburgerOpen)}}>
+          <div className={`navbar-item navbar-item-text ${isHamburgerOpen ? 'navbar-item-open' : 'navbar-item-close'}`}>
+
+          </div>
+          <div className={`navbar-item navbar-item-text ${isHamburgerOpen ? 'navbar-item-open' : 'navbar-item-close'}`}>
+            developer
+          </div>
+          <NavLink className={`navbar-item ${isHamburgerOpen ? 'navbar-item-open' : 'navbar-item-close'}`} activeClassName='selected' exact={true} to='/' onClick={() => {isHamburgerOpen && toggleHamburger(!isHamburgerOpen)}}>
             home
           </NavLink>
-          <NavLink className={`navbar-item ${isHamburgerOpen ? 'navbar-item-open' : 'navbar-item-close'}`} to='/Portfolio' onClick={() => {isHamburgerOpen && toggleHamburger(!isHamburgerOpen)}}>
+          <NavLink className={`navbar-item ${isHamburgerOpen ? 'navbar-item-open' : 'navbar-item-close'}`} activeClassName='selected' to='/Portfolio' onClick={() => {isHamburgerOpen && toggleHamburger(!isHamburgerOpen)}}>
             portfolio
           </NavLink>
-          <NavLink className={`navbar-item ${isHamburgerOpen ? 'navbar-item-open' : 'navbar-item-close'}`} to='/Contact' onClick={() => {isHamburgerOpen && toggleHamburger(!isHamburgerOpen)}}>
+          <NavLink className={`navbar-item ${isHamburgerOpen ? 'navbar-item-open' : 'navbar-item-close'}`} activeClassName='selected' to='/Contact' onClick={() => {isHamburgerOpen && toggleHamburger(!isHamburgerOpen)}}>
             contact
           </NavLink>
         </div>
