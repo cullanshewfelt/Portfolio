@@ -9,6 +9,7 @@ const Contact = () => {
   document.title = 'Cullan Shewfelt | Contact';
   return (
     <div className='dashboard has-navbar-fixed-top'>
+      <div className='top-grid'></div>
       <div className='container'>
         <section className='section'>
           <div className='columns is-centered'>
@@ -26,19 +27,8 @@ const Contact = () => {
           </div>
         </section>
       </div>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
+      
+      <div className='bottom-grid'></div>
     </div>
   )
 }

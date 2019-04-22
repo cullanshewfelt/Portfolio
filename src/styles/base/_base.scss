@@ -1,14 +1,17 @@
-document.body {
-  // background: rgb(255,128,0);
-  // background: radial-gradient(circle, rgba(255,128,0,1) 0%, rgba(121,44,228,1) 100%);
-}
 
-html, body {
+html{
   font-family: 'Anonymous Pro', monospace;
   height: 100%;
-  min-height: 100%;
   margin: 0;
   padding: 0;
+}
+
+body {
+  // font-family: 'Anonymous Pro', monospace;
+  // height: 100%;
+  // min-height: 100%;
+  // margin: 0;
+  // padding: 0;
 }
 
 .has-navbar-fixed-top{
@@ -16,21 +19,57 @@ html, body {
 }
 
 .dashboard {
-  height: 100%;
-  width: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: auto;
   background: rgb(255,103,0);
   // background: $orangeToPurp;
   background: $orangeToBlue;
-  background-attachment: fixed;
 }
 
-.dashboard:after {
+.top-grid {
   z-index: 0;
-  -webkit-mask-image: -webkit-gradient(linear, left 90%, left top, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
-  mask-image: gradient(linear, left 90%, left top, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+  // -webkit-mask-image: -webkit-gradient(linear, right 90%, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+  -webkit-mask-image: -webkit-linear-gradient(top,(rgba(0,0,0,1)), transparent);
+  // mask-image: gradient(linear, left 90%, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+	transform: perspective(400px) rotateX(-40deg) scale(2,2) translateZ(0);
+  // display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  // padding: 1px;
+  // -webkit-background-clip: content-box;
+  // -webkit-backface-visibility: hidden;
+  // outline: 1px solid transparent;
+  transform-origin: top center;
+  // will-change: transform;
+  // background-attachment: fixed;
+}
+
+.top-grid {
+  background-image:
+    linear-gradient(to right, $retro-pink 1px, transparent 1px),
+    linear-gradient(to top, $retro-pink 1px, transparent 1px);
+  // background-position: center top;
+  background-size: 30px 30px;
+  // background-attachment: fixed;
+}
+
+.bottom-grid {
+  z-index: 0;
+  // -webkit-mask-image:
+  //   -webkit-gradient(linear, left 90%, right top, from(rgba(0,0,0,1)), to(rgba(0,0,0,0))),
+  //   -webkit-gradient(linear, right 90%, right top, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+  -webkit-mask-image: -webkit-linear-gradient(bottom,(rgba(0,0,0,1)), transparent);
 	transform: perspective(400px) rotateX(40deg) scale(2,2) translateZ(0);
-  content: "";
-  display: block;
+  // content: "";
+  // display: block;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -38,21 +77,23 @@ html, body {
   width: 100%;
   height: 100%;
   padding: 1px;
-  -webkit-background-clip: content-box;
-  -webkit-backface-visibility: hidden;
-  outline: 1px solid transparent;
-  transform-origin: bottom center;
-  will-change: transform;
-  background-attachment: fixed;
+  // -webkit-background-clip: content-box;
+  // -webkit-backface-visibility: hidden;
+  // outline: 1px solid transparent;
+  transform-origin: center bottom;
+  // will-change: transform;
+  // background-attachment: fixed;
 }
 
-.dashboard:after {
-  background-position: center bottom;
-  background-size: 40px 40px;
+.bottom-grid {
   background-image:
-  linear-gradient(to right, $retro-pink 1px, transparent 2px),
-  linear-gradient(to bottom, $retro-pink 1px, transparent 2px);
-   background-attachment: fixed;
+    linear-gradient(to right, $retro-pink 1px, transparent 1px),
+    linear-gradient(to bottom, $retro-pink 1px, transparent 1px);
+  background-position: center bottom;
+  background-size: 30px 30px;
+  // background-attachment: fixed;
+  // background-repeat: repeat;
+  // background-repeat: repeat-y;
 }
 
 @media only screen and (max-width: 768px) {
