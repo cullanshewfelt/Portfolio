@@ -4,10 +4,11 @@ document.body {
 }
 
 html, body {
-    height: 100%;
-    min-height: 100%;
-    margin: 0;
-    padding: 0;
+  font-family: 'Anonymous Pro', monospace;
+  height: 100%;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 .has-navbar-fixed-top{
@@ -57,5 +58,17 @@ html, body {
 @media only screen and (max-width: 768px) {
   .has-navbar-fixed-top{
     padding-top: 16%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .has-navbar-fixed-top{
+    padding-top: 18%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .has-navbar-fixed-top{
+    padding-top: 20%;
   }
 }

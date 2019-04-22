@@ -18,9 +18,17 @@
   background-color:black;
 }
 
-.navbar-item-text{
-  font-family: Gtek;
+.navbar-element{
+  color: $retro-pink;
+  padding-top: 12px;
+  padding-bottom: 0px;
+  margin-top: 60px;
+  margin-bottom: 0px;
 }
+
+// .navbar-item-text{
+//   font-family: Gtek;
+// }
 
 .gtek{
   color: $retro-pink;
@@ -38,13 +46,20 @@
   margin-right: 16px;
 }
 
-@media only screen and (min-width: 1088px) {
+@media only screen and (min-width: 1024px) {
   .gtek {
     display: none;
   }
 }
 
+@media only screen and (max-width: 1024px) {
+  .navbar-element {
+    display: none;
+  }
+}
+
 @media only screen and (max-width: 788px) {
+
   .gtek {
     margin-top: 20px;
     font-size: 16px;
@@ -73,15 +88,6 @@
     margin-top: 22px;
     margin-left: 0;
     font-size: 12px;
-  }
-  .Spac3_Neon { // my favorite
-    color: $retro-pink;
-    font-family: Spac3_Neon;
-    font-size: 44px;
-    // padding: 0px 8px 0 16px;
-    padding: 0 0 0 8px;
-    margin-bottom: 0px;
-    margin-right: 8px;
   }
 }
 

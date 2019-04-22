@@ -35,29 +35,27 @@ const Dashboard = () => {
           <div className="tile is-parent">
             <article className="tile is-child notification is-primary">
               <div className="content">
-                <h3 className="title">Languages & Frameworks</h3>
+                <h4 className="title has-text-centered">Languages & Frameworks</h4>
                 {/* <p className="subtitle">And Frameworks</p> */}
                 <div className="content">
-                  <ul>
-                    <li>JavaScript</li>
-                    <li>ReactJs</li>
-                    <li>node.js</li>
-                    <li>SQL</li>
-                    <li>Redux</li>
-                    <li>Mongo</li>
-                    <li>SASS</li>
-                  </ul>
+                  <div class="columns">
+                    <div class="column">
+                      <ul>
+                        <li>JavaScript</li>
+                        <li>ReactJs</li>
+                        <li>node.js</li>
+                        <li>SQL</li>
+                        <li>Redux</li>
+                        <li>Mongo</li>
+                        <li>SASS</li>
+                      </ul>
+                    </div>
+                  </div>
                 </div>
               </div>
             </article>
           </div>
         </div>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
         <br/>
         <br/>
         <br/>
