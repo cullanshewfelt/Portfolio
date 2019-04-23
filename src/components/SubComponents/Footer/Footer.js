@@ -7,7 +7,7 @@ import Loader from '../Loader';
 
 const Footer = () => {
      return(
-       <footer className="footer is-hidden-mobile is-fixed-bottom">
+       <footer className="footer is-hidden-mobile">
          <div className="content has-text-centered">
            <a target="_blank" href='https://www.linkedin.com' title='LinkedIn Profile'>
              <img className='linkedin-icon'

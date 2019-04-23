@@ -3,7 +3,7 @@
   background-color: black;
   width: 100%;
   border-style: inset;
-  border-color: $retro-pink;
+  border-color: $bluish-gray;
 }
 
 
@@ -17,7 +17,7 @@
 }
 
 .Spac3_Neon{ // logo: my favorite font
-  color: $retro-pink;
+  color: $bluish-gray;
   font-family: Spac3_Neon;
   font-size: 44px;
   padding: 0px 16px 0 24px;
@@ -26,14 +26,14 @@
 }
 
 .gtek{ // hidden on fullscreen
-  color: $retro-pink;
+  color: $bluish-gray;
   font-family: Gravedigger;
   margin-top: 16px;
   margin-left: -16px;
 }
 
 .navbar-item-close{
-  color: $retro-pink;
+  color: $bluish-gray;
   padding-top: 0px;
   padding-bottom: 0px;
   margin-top: 60px;
@@ -41,13 +41,13 @@
 }
 
 a.navbar-item:hover {
-  background-color: $retro-pink;
+  background-color: $bluish-gray;
   color: black;
 }
 
 .navbar-element{
   display: flex;
-  color: $retro-pink;
+  color: $bluish-gray;
   // padding-top: 12px;
   // padding-bottom: 0px;
   position: relative;
@@ -57,7 +57,7 @@ a.navbar-item:hover {
 
 .navbar-item-open{
   background-color: black;
-  color: $retro-pink;
+  color: $bluish-gray;
   padding-top: 0px;
   padding-bottom: 0px;
   margin-top: 0px;
@@ -65,24 +65,24 @@ a.navbar-item:hover {
 }
 
 .selected{
-  background-color: $retro-pink;
+  background-color: $bluish-gray;
   color: black;
 }
 
 .button.is-active {
-  border-color: $retro-pink;
-  color: $retro-pink;
+  border-color: $bluish-gray;
+  color: $bluish-gray;
 }
 
 .button.is-hovered, .button:hover {
-  border-color: $retro-pink;
-  color: $retro-pink;
+  border-color: $bluish-gray;
+  color: $bluish-gray;
 }
 
 .navbar-burger{
   background-color: black;
-  color: $retro-pink;
-  border-color: $retro-pink;
+  color: $bluish-gray;
+  border-color: $bluish-gray;
   margin-top: 4px;
   margin-right: 18px;
   margin-bottom: 0px;
@@ -95,7 +95,7 @@ a.navbar-item:hover {
   }
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1088px) {
   .navbar-element {  // hides on smaller screens
     display: none;
   }
@@ -115,7 +115,7 @@ a.navbar-item:hover {
     font-size: 13px;
   }
   .Spac3_Neon{ // my favorite
-    color: $retro-pink;
+    color: $bluish-gray;
     font-family: Spac3_Neon;
     font-size: 44px;
     // padding: 0px 8px 0 16px;

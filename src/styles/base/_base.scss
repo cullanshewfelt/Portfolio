@@ -26,8 +26,8 @@ body {
   left: 0;
   overflow: auto;
   background: rgb(255,103,0);
-  // background: $orangeToPurp;
-  background: $orangeToBlue;
+  background: $orangeToPurp;
+  // background: $orangeToBlue;
 }
 
 .top-grid {
@@ -54,8 +54,8 @@ body {
 
 .top-grid {
   background-image:
-    linear-gradient(to right, $retro-pink 1px, transparent 1px),
-    linear-gradient(to top, $retro-pink 1px, transparent 1px);
+    linear-gradient(to right, $outrun-blue 1px, transparent 1px),
+    linear-gradient(to top, $outrun-blue 1px, transparent 1px);
   // background-position: center top;
   background-size: 30px 30px;
   // background-attachment: fixed;
@@ -87,8 +87,8 @@ body {
 
 .bottom-grid {
   background-image:
-    linear-gradient(to right, $retro-pink 1px, transparent 1px),
-    linear-gradient(to bottom, $retro-pink 1px, transparent 1px);
+    linear-gradient(to right, $outrun-blue 1px, transparent 1px),
+    linear-gradient(to bottom, $outrun-blue 1px, transparent 1px);
   background-position: center bottom;
   background-size: 30px 30px;
   // background-attachment: fixed;
