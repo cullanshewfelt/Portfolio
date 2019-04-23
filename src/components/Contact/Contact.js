@@ -10,24 +10,20 @@ const Contact = () => {
   return (
     <div className='dashboard has-navbar-fixed-top'>
       <div className='top-grid'></div>
-      <div className='container'>
-        <section className='section'>
-          <div className='columns is-centered'>
-            <div className='column is-full has-text-centered'>Contact Me</div>
-          </div>
-          <div className='columns is-centered'>
-            <div className='column is-two-fifths has-text-centered'>Email</div>
-            <div className='colum is-one-fifth'> </div>
-            <div className='column is-two-fifths has-text-centered'>cs cullan shewfelt</div>
-          </div>
-          <div className='columns is-centered'>
-            <div className='column is-two-fifths has-text-centered'>Github</div>
-            <div className='colum is-one-fifth'> </div>
-            <div className='column is-two-fifths has-text-centered'>LinkedIn</div>
-          </div>
-        </section>
+      <div className='tile is-ancestor'>
+        <div className='tile is-parent is-3'>
+        </div>
+        <div className='tile is-parent is-6'>
+          <article className='tile is-child notification is-primary has-text-centered'>
+            <p className='title'>Contact Me</p>
+            <p className='subtitle'>Aligned with the right tile</p>
+            <div className='content'>
+            </div>
+          </article>
+        </div>
+        <div className='tile is-parent is-3'>
+        </div>
       </div>
-      
       <div className='bottom-grid'></div>
     </div>
   )
