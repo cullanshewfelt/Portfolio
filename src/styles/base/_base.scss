@@ -1,13 +1,14 @@
 
 html{
-  font-family: 'Anonymous Pro', monospace;
   height: 100%;
   margin: 0;
   padding: 0;
 }
 
 body {
-  // font-family: 'Anonymous Pro', monospace;
+  font-family: 'Anonymous Pro', monospace;
+  // font-family: 'B612 Mono', monospace;
+  // font-family: 'PT Mono', monospace;
   // height: 100%;
   // min-height: 100%;
   // margin: 0;
@@ -15,7 +16,7 @@ body {
 }
 
 .has-navbar-fixed-top{
-  padding-top: 12%;
+  padding-top: 10%;
 }
 
 .dashboard {
