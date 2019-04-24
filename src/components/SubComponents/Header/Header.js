@@ -19,7 +19,9 @@ class Header extends React.Component {
     this.setState({heading});
   }
 
-  stopToggle = () => { console.log('clearInterval') & clearInterval(temp) };
+  stopToggle = () => {
+    clearInterval(temp);
+  }
 
   toggleHamburger = (isHamburgerOpen) => {
     this.setState({isHamburgerOpen});
@@ -63,9 +65,7 @@ class Header extends React.Component {
             <span/>
           </button>
         </div>
-        <div
-          className={`navbar-menu ${isHamburgerOpen ? 'is-active' : ''}`}
-        >
+        <div className={`navbar-menu ${isHamburgerOpen ? 'is-active' : ''}`}>
           <div className="navbar-start">
             <div className={`navbar-item ${isHamburgerOpen ? 'navbar-item-open' : 'navbar-item-close'}`}>
               Cullan Shewfelt

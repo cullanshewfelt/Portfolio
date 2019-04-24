@@ -9,6 +9,7 @@ const Dashboard = () => {
   document.title = 'Cullan Shewfelt | Web Developer';
     return (
       <div className='dashboard has-navbar-fixed-top'>
+      <div className='dashboard-2'></div>
         <div className='top-grid'></div>
         <div className='tile is-ancestor'>
           <div className='tile is-vertical is-8'>

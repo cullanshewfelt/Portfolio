@@ -20,6 +20,7 @@ body {
 }
 
 .dashboard {
+  z-index: 0;
   position: fixed;
   top: 0;
   right: 0;
@@ -28,11 +29,27 @@ body {
   overflow: auto;
   background: rgb(255,103,0);
   background: $orangeToPurp;
-  // background: $orangeToBlue;
 }
 
+// .dashboard::before {
+//   z-index: 0;
+//   position: fixed;
+//   top: 0;
+//   right: 0;
+//   bottom: 0;
+//   left: 0;
+//   overflow: auto;
+//   background: rgb(255,103,0);
+//   background: $orangeToPurpGlow;
+//   transition: opacity 2s;
+//   opacity: .7;
+//
+// }
+
+
+
 .top-grid {
-  z-index: 0;
+  z-index: 1;
   // -webkit-mask-image: -webkit-gradient(linear, right 90%, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
   -webkit-mask-image: -webkit-linear-gradient(top,(rgba(0,0,0,1)), transparent);
   // mask-image: gradient(linear, left 90%, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
@@ -63,7 +80,7 @@ body {
 }
 
 .bottom-grid {
-  z-index: 0;
+  z-index: 1;
   // -webkit-mask-image:
   //   -webkit-gradient(linear, left 90%, right top, from(rgba(0,0,0,1)), to(rgba(0,0,0,0))),
   //   -webkit-gradient(linear, right 90%, right top, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));

@@ -12,8 +12,9 @@ $gray: #333449;
 // radial backgrounds
 $lightBlueDarkBlue: radial-gradient(circle, rgba(0,196,255,1) -14%, rgba(18,0,123,1) 100%);
 $orangeToBlue: radial-gradient(circle, rgba(255,100,0,1) -14%, rgba(252,124,0,1) 26%, rgba(91,201,255,1) 61%, rgba(0,26,254,1) 100%);
-$orangeToPurp: radial-gradient(circle, rgba(255,103,0,1) -14%, rgba(255,82,45,1) 14%, rgba(255,11,196,1) 44%, rgba(18,0,123,1) 99%);
-
+$orangeToPurp: radial-gradient(circle, rgba(255,103,0,.85) -14%, rgba(255,82,45,.85) 14%, rgba(255,11,196,.85) 44%, rgba(18,0,123,.85) 99%);
+$orangeToPurpGlow: radial-gradient(circle, rgba(255,179,128,1) 0%, rgba(247,247,247,1) 14%, rgba(255,179,237,1) 44%, rgba(109,96,182,1) 99%);
+// rgb(255,179,128); background for $orangeToPurpGlow
 
 
 // Spacing
