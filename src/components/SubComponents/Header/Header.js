@@ -10,10 +10,11 @@ class Header extends React.Component {
     super(props);
     this.state = {
       currentIndex: 0,
+      interval: null,
       isHamburgerOpen: false,
       heading: 'Web Developer',
-      headings: ['Programmer', 'Web Developer', 'Software Engineer', 'Full Stack'],
-      typedEffect: '       ..'
+      headings: ['  Programmer', 'Web Developer', 'Software Engineer', '  Full Stack Dev'],
+      typedEffect: '             ..'
     }
   }
 
@@ -39,11 +40,11 @@ class Header extends React.Component {
         heading: headings[0],
         typedEffect: ''
       });
-      this.typeEffect();
+      this.typeEffectHandler();
     }, 3000);
   }
 
-  typeEffect = () => {
+  typeEffectHandler = () => {
     let { currentIndex, heading, typedEffect } = this.state;
     typedEffect.length < (heading.length)
       ? currentIndex < (heading.length)
@@ -51,12 +52,36 @@ class Header extends React.Component {
               currentIndex: currentIndex + 1,
               typedEffect: typedEffect + heading[currentIndex]
           })
-          & setTimeout(this.typeEffect, 20)
+          & setTimeout(this.typeEffectHandler, 30)
       : typedEffect.length < (heading.length + 2)
         && this.setState({
             typedEffect: typedEffect + '.'
           })
-          & setTimeout(this.typeEffect, 20)
+          & setTimeout(this.typeEffectHandler, 30)
+  }
+
+  typeEffect = (parsedHeading) => {
+    // this function basically adds conditions to render the typeEffect differently
+    // depending on whether or not the navbar is open
+    let { heading, isHamburgerOpen, typedEffect} = this.state;
+
+    return typedEffect.length === heading.length + 2 && !isHamburgerOpen
+        ? parsedHeading // & console.log('blink') blink effect
+        : typedEffect === '' && !isHamburgerOpen
+        ? ' '
+        : !isHamburgerOpen
+        ? parsedHeading  // working on getting a blinking effect
+        : typedEffect.length === heading.length + 2 && isHamburgerOpen
+        ? parsedHeading.trim() // & console.log('blink')
+        : typedEffect.trim() === '' && isHamburgerOpen
+        ? ' '
+        : parsedHeading.trim()
+  }
+
+  blinkEffect = (parsedHeading) => {
+    // let temp = '       ..';
+    // temp !== parsedHeading
+    //   ? setInterval()
   }
 
   componentDidMount(){
@@ -68,9 +93,14 @@ class Header extends React.Component {
 
   render(){
     let { currentIndex, heading, headings, isHamburgerOpen, typedEffect} = this.state;
+    // console.log(78, typedEffect);
 
     let remainingSpace = 19 - ((19 - typedEffect.length)/2);
-    let parsedHeading = (19 - typedEffect.length) % 2 === 0
+    let parsedHeading = isHamburgerOpen
+      ? (19 - typedEffect.length) % 2 === 0
+          ? typedEffect.trim().padEnd(remainingSpace - 2, ' ').padStart(19, ' ')
+          : typedEffect.trim().padEnd(Math.floor(remainingSpace - 2) , ' ').padStart(19, ' ')
+      : (19 - typedEffect.length) % 2 === 0
         ? typedEffect.padEnd(remainingSpace - 2, ' ').padStart(19, ' ')
         : typedEffect.padEnd(Math.floor(remainingSpace - 2) , ' ').padStart(19, ' ')
 
@@ -96,13 +126,14 @@ class Header extends React.Component {
             <div className='navbar-item navbar-element'>
               :
             </div>
-            <div className={`navbar-item ${isHamburgerOpen ? 'navbar-item-open' : 'navbar-item-close description-heading'}`}>
-              {typedEffect.length === heading.length + 2
-                ? parsedHeading
-                : parsedHeading // working on getting a blinking effect
-              }
+            <div className={`navbar-item description-heading ${isHamburgerOpen ? 'navbar-item-open' : 'navbar-item-close'}`}>
+              { this.typeEffect(parsedHeading) }
             </div>
             <div className='navbar-item navbar-element'>
+              :
+            </div>
+          </div>
+          <div className='navbar-end'>  <div className='navbar-item navbar-element'>
               ||
             </div>
             <NavLink className={`navbar-item ${isHamburgerOpen ? 'navbar-item-open' : 'navbar-item-close'}`} activeClassName='selected' exact={true} to='/' onClick={() => {isHamburgerOpen && this.toggleHamburger(!isHamburgerOpen)}}>

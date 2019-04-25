@@ -114,7 +114,19 @@ body {
   // background-repeat: repeat-y;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1440px) {
+  .has-navbar-fixed-top{
+    padding-top: 12%;
+  }
+}
+
+@media only screen and (max-width: 1088px) {
+  .has-navbar-fixed-top{
+    padding-top: 14%;
+  }
+}
+
+@media only screen and (max-width: 788px) {
   .has-navbar-fixed-top{
     padding-top: 16%;
   }
