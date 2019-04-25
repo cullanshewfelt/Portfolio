@@ -4,7 +4,7 @@ html {
 }
 
 body {
-  font-size: 20px;
+  font-size: 18px;
   height: 100%;
 }
 
@@ -15,20 +15,14 @@ body {
   background-color: $bluish-gray !important;
 }
 
+h4{
+  margin-bottom: 0px !important;
+}
 
-// Anurati
-// Azonix
-// Blanka
-// Dual-300
-// Halogen
-// Gravedigger
-// Gtek
-// Neptune
-// Rock_Rinder
-// Spac3_Neon
-// Spac3_Tech
-// Trench
-
+.notification{
+  padding: 1rem 1rem 1rem 1rem;
+  font-size: 18px;
+}
 
 .loading {
   display: block;

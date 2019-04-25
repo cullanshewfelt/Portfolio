@@ -9,6 +9,8 @@ class Header extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
+      blink: false,
+      blinkInterval: null,
       currentIndex: 0,
       interval: null,
       isHamburgerOpen: false,
@@ -63,9 +65,9 @@ class Header extends React.Component {
   typeEffect = (parsedHeading) => {
     // this function basically adds conditions to render the typeEffect differently
     // depending on whether or not the navbar is open
-    let { heading, isHamburgerOpen, typedEffect} = this.state;
+    let { blink, heading, isHamburgerOpen, typedEffect } = this.state;
 
-    return typedEffect.length === heading.length + 2 && !isHamburgerOpen
+    return (typedEffect.length === heading.length + 2) && !isHamburgerOpen
         ? parsedHeading // & console.log('blink') blink effect
         : typedEffect === '' && !isHamburgerOpen
         ? ' '
@@ -79,9 +81,13 @@ class Header extends React.Component {
   }
 
   blinkEffect = (parsedHeading) => {
-    // let temp = '       ..';
-    // temp !== parsedHeading
-    //   ? setInterval()
+    let blinkInterval = setInterval(this.handleBlink(), 500);
+    this.setState({blinkInterval: blinkInterval});
+    return this.state.blink ? '' : parsedHeading;
+  }
+
+  handleBlink = () => {
+    this.setState({blink: !this.state.blink});
   }
 
   componentDidMount(){
@@ -92,21 +98,21 @@ class Header extends React.Component {
   }
 
   render(){
+    // console.log(this.state.typedEffect.length === this.state.heading.length + 2)
     let { currentIndex, heading, headings, isHamburgerOpen, typedEffect} = this.state;
-    // console.log(78, typedEffect);
 
-    let remainingSpace = 19 - ((19 - typedEffect.length)/2);
+    let remainingSpace = 19 - ((19 - typedEffect.length)/2) - 2;
     let parsedHeading = isHamburgerOpen
       ? (19 - typedEffect.length) % 2 === 0
-          ? typedEffect.trim().padEnd(remainingSpace - 2, ' ').padStart(19, ' ')
-          : typedEffect.trim().padEnd(Math.floor(remainingSpace - 2) , ' ').padStart(19, ' ')
+          ? typedEffect.trim().padEnd(remainingSpace, ' ').padStart(19, ' ')
+          : typedEffect.trim().padEnd(Math.floor(remainingSpace) , ' ').padStart(19, ' ')
       : (19 - typedEffect.length) % 2 === 0
-        ? typedEffect.padEnd(remainingSpace - 2, ' ').padStart(19, ' ')
-        : typedEffect.padEnd(Math.floor(remainingSpace - 2) , ' ').padStart(19, ' ')
+        ? typedEffect.padEnd(remainingSpace, ' ').padStart(19, ' ')
+        : typedEffect.padEnd(Math.floor(remainingSpace) , ' ').padStart(19, ' ')
 
     return(
-      <nav className="navbar is-fixed-top" role="navigation" aria-label="main navigation">
-        <div className="navbar-brand">
+      <nav className='navbar is-fixed-top' role='navigation' aria-label='main navigation'>
+        <div className='navbar-brand'>
           <div className='Spac3_Neon'>c s</div>
           {/* <div className='gtek'>{!isHamburgerOpen ? ' - cullan shewfelt': ''}</div> */}
           <button
@@ -119,18 +125,18 @@ class Header extends React.Component {
           </button>
         </div>
         <div className={`navbar-menu ${isHamburgerOpen ? 'is-active' : ''}`}>
-          <div className="navbar-start">
+          <div className='navbar-start'>
             <div className={`navbar-item ${isHamburgerOpen ? 'navbar-item-open' : 'navbar-item-close'}`}>
               Cullan Shewfelt
             </div>
             <div className='navbar-item navbar-element'>
-              :
+              ::
             </div>
             <div className={`navbar-item description-heading ${isHamburgerOpen ? 'navbar-item-open' : 'navbar-item-close'}`}>
               { this.typeEffect(parsedHeading) }
             </div>
             <div className='navbar-item navbar-element'>
-              :
+              ::
             </div>
           </div>
           <div className='navbar-end'>  <div className='navbar-item navbar-element'>
