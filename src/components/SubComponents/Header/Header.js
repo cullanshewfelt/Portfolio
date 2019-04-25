@@ -1,17 +1,19 @@
 import React, { useState } from 'react';
 import { connect } from 'react-redux';
-import {NavLink} from 'react-router-dom';
 import Loader from '../Loader';
+import {NavLink} from 'react-router-dom';
+import Typist from 'react-typist'; // adds a typing / typewriter animation effect  i think it would be cool for the header
 import {initializeData} from '../../../actions/dataActions';
 
 class Header extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
+      currentIndex: 0,
       isHamburgerOpen: false,
       heading: 'Web Developer',
       headings: ['Programmer', 'Web Developer', 'Software Engineer', 'Full Stack'],
-      temp: undefined
+      typedEffect: ''
     }
   }
 
@@ -32,9 +34,25 @@ class Header extends React.Component {
     let temp = setInterval(()=>{
       headings.push(headings[0]);
       headings.shift();
-      this.changeHeader(headings[0]);
-    }, 2000);
-    this.setState({temp});
+      this.setState({
+        currentIndex: 0,
+        heading: headings[0],
+        typedEffect: ''
+      });
+      this.typeEffect();
+    }, 3000);
+  }
+
+  typeEffect = () => {
+    let { currentIndex, heading, typedEffect } = this.state;
+    typedEffect !== heading
+      ? currentIndex < (heading.length)
+        && this.setState({
+              currentIndex: currentIndex + 1,
+              typedEffect: typedEffect + heading[currentIndex]
+          })
+          & setTimeout(this.typeEffect, 20)
+    : null
   }
 
   componentDidMount(){
@@ -45,11 +63,14 @@ class Header extends React.Component {
   }
 
   render(){
-    let { heading, headings, isHamburgerOpen} = this.state;
+    let { currentIndex, heading, headings, isHamburgerOpen, typedEffect} = this.state;
+
     let remainingSpace = 17 - ((17 - heading.length)/2);
     let parsedHeading = (17 - heading.length) % 2 === 0
         ? heading.padStart(remainingSpace, ' ').padEnd(17 , ' ')
         : heading.padStart(Math.floor(remainingSpace), ' ').padEnd(17 , ' ');
+
+    console.log(typedEffect);
 
     return(
       <nav className="navbar is-fixed-top" role="navigation" aria-label="main navigation">
@@ -74,7 +95,9 @@ class Header extends React.Component {
               :
             </div>
             <div className={`navbar-item ${isHamburgerOpen ? 'navbar-item-open' : 'navbar-item-close description-heading'}`}>
+              {/* <Typist> */}
               {parsedHeading}
+              {/* </Typist> */}
             </div>
             <div className='navbar-item navbar-element'>
               ||
