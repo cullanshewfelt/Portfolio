@@ -13,7 +13,7 @@ class Header extends React.Component {
       isHamburgerOpen: false,
       heading: 'Web Developer',
       headings: ['Programmer', 'Web Developer', 'Software Engineer', 'Full Stack'],
-      typedEffect: ''
+      typedEffect: '       ..'
     }
   }
 
@@ -45,14 +45,18 @@ class Header extends React.Component {
 
   typeEffect = () => {
     let { currentIndex, heading, typedEffect } = this.state;
-    typedEffect !== heading
+    typedEffect.length < (heading.length)
       ? currentIndex < (heading.length)
         && this.setState({
               currentIndex: currentIndex + 1,
               typedEffect: typedEffect + heading[currentIndex]
           })
           & setTimeout(this.typeEffect, 20)
-    : null
+      : typedEffect.length < (heading.length + 2)
+        && this.setState({
+            typedEffect: typedEffect + '.'
+          })
+          & setTimeout(this.typeEffect, 20)
   }
 
   componentDidMount(){
@@ -65,12 +69,10 @@ class Header extends React.Component {
   render(){
     let { currentIndex, heading, headings, isHamburgerOpen, typedEffect} = this.state;
 
-    let remainingSpace = 17 - ((17 - heading.length)/2);
-    let parsedHeading = (17 - heading.length) % 2 === 0
-        ? heading.padStart(remainingSpace, ' ').padEnd(17 , ' ')
-        : heading.padStart(Math.floor(remainingSpace), ' ').padEnd(17 , ' ');
-
-    console.log(typedEffect);
+    let remainingSpace = 19 - ((19 - typedEffect.length)/2);
+    let parsedHeading = (19 - typedEffect.length) % 2 === 0
+        ? typedEffect.padEnd(remainingSpace - 2, ' ').padStart(19, ' ')
+        : typedEffect.padEnd(Math.floor(remainingSpace - 2) , ' ').padStart(19, ' ')
 
     return(
       <nav className="navbar is-fixed-top" role="navigation" aria-label="main navigation">
@@ -95,15 +97,16 @@ class Header extends React.Component {
               :
             </div>
             <div className={`navbar-item ${isHamburgerOpen ? 'navbar-item-open' : 'navbar-item-close description-heading'}`}>
-              {/* <Typist> */}
-              {parsedHeading}
-              {/* </Typist> */}
+              {typedEffect.length === heading.length + 2
+                ? parsedHeading
+                : parsedHeading // working on getting a blinking effect
+              }
             </div>
             <div className='navbar-item navbar-element'>
               ||
             </div>
             <NavLink className={`navbar-item ${isHamburgerOpen ? 'navbar-item-open' : 'navbar-item-close'}`} activeClassName='selected' exact={true} to='/' onClick={() => {isHamburgerOpen && this.toggleHamburger(!isHamburgerOpen)}}>
-              Home
+              Home {isHamburgerOpen && '|| About Me || Skills'}
             </NavLink>
             <div className='navbar-item navbar-element'>
               ||
