@@ -43,7 +43,7 @@ class Header extends React.Component {
         typedEffect: ''
       });
       this.typeEffectHandler();
-    }, 3000);
+    }, 2500);
   }
 
   typeEffectHandler = () => {
@@ -55,11 +55,12 @@ class Header extends React.Component {
               typedEffect: typedEffect + heading[currentIndex]
           })
           & setTimeout(this.typeEffectHandler, 30)
-      : typedEffect.length < (heading.length + 2)
-        && this.setState({
-            typedEffect: typedEffect + '.'
-          })
-          & setTimeout(this.typeEffectHandler, 30)
+      : null
+      // typedEffect.length < (heading.length + 2)
+      //   && this.setState({
+      //       typedEffect: typedEffect + '.'
+      //     })
+      //     & setTimeout(this.typeEffectHandler, 30)
   }
 
   typeEffect = (parsedHeading) => {
@@ -100,15 +101,15 @@ class Header extends React.Component {
   render(){
     // console.log(this.state.typedEffect.length === this.state.heading.length + 2)
     let { currentIndex, heading, headings, isHamburgerOpen, typedEffect} = this.state;
-
+    typedEffect = `${typedEffect}..`
     let remainingSpace = 19 - ((19 - typedEffect.length)/2) - 2;
     let parsedHeading = isHamburgerOpen
       ? (19 - typedEffect.length) % 2 === 0
           ? typedEffect.trim().padEnd(remainingSpace, ' ').padStart(19, ' ')
           : typedEffect.trim().padEnd(Math.floor(remainingSpace) , ' ').padStart(19, ' ')
       : (19 - typedEffect.length) % 2 === 0
-        ? typedEffect.padEnd(remainingSpace, ' ').padStart(19, ' ')
-        : typedEffect.padEnd(Math.floor(remainingSpace) , ' ').padStart(19, ' ')
+        ? typedEffect.padStart(19, ' ').padEnd(remainingSpace, ' ')
+        : typedEffect.padStart(19, ' ').padEnd(Math.floor(remainingSpace) , ' ')
 
     return(
       <nav className='navbar is-fixed-top' role='navigation' aria-label='main navigation'>

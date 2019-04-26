@@ -9,7 +9,7 @@ const Dashboard = () => {
   document.title = 'Cullan Shewfelt | Web Developer';
     return (
       <div className='dashboard has-navbar-fixed-top'>
-      <div className='dashboard-2'></div>
+        <div className='dashboard-2'></div>
         <div className='top-grid'></div>
         <div className='columns'>
           <div className='column'></div>
@@ -41,29 +41,29 @@ const Dashboard = () => {
                     <div className='content'>
                       <h4 className='title has-text-centered'>Languages && Frameworks</h4>
                       {/* <p className='subtitle'>And Frameworks</p> */}
-                        <div className='columns is-mobile is-gapless'>
-                          <div className='column'>
-                            <ul>
-                              <li>JavaScript</li>
-                              <li>HTML5</li>
-                              <li>CSS3</li>
-                              <li>SQL / MySQL</li>
+                      <div className='columns is-mobile is-gapless'>
+                        <div className='column'>
+                          <ul>
+                            <li>JavaScript</li>
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>SQL / MySQL</li>
 
-                              <li>MongoDB</li>
-                              <li>PHP</li>
-                              <li>Python</li>
-                            </ul>
-                          </div>
-                          <div className='column'>
-                            <ul>
-                              <li>node.js</li>
-                              <li>ReactJs</li>
-                              <li>Express</li>
-                              <li>jQuery</li>
-                              <li>Redux</li>
-                              <li>SASS</li>
-                            </ul>
-                          </div>
+                            <li>MongoDB</li>
+                            <li>PHP</li>
+                            <li>Python</li>
+                          </ul>
+                        </div>
+                        <div className='column'>
+                          <ul>
+                            <li>node.js</li>
+                            <li>ReactJs</li>
+                            <li>Express</li>
+                            <li>jQuery</li>
+                            <li>Redux</li>
+                            <li>SASS</li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
                   </article>
@@ -71,7 +71,7 @@ const Dashboard = () => {
                 <div className='tile is-parent'>
                   <article className='tile is-child notification is-primary'>
                     <div className='content'>
-                      <h4 className='title has-text-centered'>Other Skills, Tools && Experience</h4>
+                      <h4 className='title has-text-centered'>Skills, Tools && Experience</h4>
                       <div className='columns is-mobile is-gapless'>
                         <div className='column'>
                           <ul>
