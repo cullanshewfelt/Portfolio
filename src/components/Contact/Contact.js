@@ -14,6 +14,7 @@ const Contact = () => {
         <div className='tile is-parent is-6'>
           <article className='tile is-child notification is-primary has-text-centered'>
             <p className='title'>Contact Me</p>
+            <hr/>
             <p className='subtitle'>Aligned with the right tile</p>
             <div className='content'>
             </div>

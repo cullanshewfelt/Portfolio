@@ -15,19 +15,29 @@ const AboutMe = () => {
               <div className='tile is-vertical is-6'>
                 <div className='tile is-parent is-vertical'>
                   <article className='tile is-child notification is-primary'>
-                    <p className='title'></p>
-                    <p className='subtitle'>Hello World! My name is Cullan Shewfelt and I am a web developer from Los Angeles. </p>
+                    <div className='content'>
+                      <h4 className='title has-text-centered'>About Me</h4>
+                      <hr/>
+                      Hello World!
+                      <br/>
+                      My name is <strong>Cullan Shewfelt</strong> and
+                      I am a Web Developer from Los Angeles.
+                    </div>
                   </article>
                   <article className='tile is-child notification is-primary'>
-                    <p className='title'>...tiles</p>
-                    <p className='subtitle'>Bottom tile</p>
+                    <div className='content'>
+                      <h4 className='title has-text-centered'>Continued...</h4>
+                      <hr/>
+                      <p className='subtitle'>Middle tile</p>
+                    </div>
                   </article>
                 </div>
                 <div className='tile is-parent'>
                   <article className='tile is-child notification is-primary'>
-                    <p className='title'>Wide tile</p>
-                    <p className='subtitle'>Aligned with the right tile</p>
                     <div className='content'>
+                      <h4 className='title has-text-centered'>Continued...</h4>
+                      <hr/>
+                      <p className='subtitle'>Bottom Tile</p>
                     </div>
                   </article>
                 </div>
@@ -37,7 +47,7 @@ const AboutMe = () => {
                   <article className='tile is-child notification is-primary'>
                     <div className='content'>
                       <h4 className='title has-text-centered'>Languages && Frameworks</h4>
-                      {/* <p className='subtitle'>And Frameworks</p> */}
+                      <hr/>
                       <div className='columns is-mobile is-gapless'>
                         <div className='column'>
                           <ul>
@@ -45,7 +55,6 @@ const AboutMe = () => {
                             <li>HTML5</li>
                             <li>CSS3</li>
                             <li>SQL / MySQL</li>
-
                             <li>MongoDB</li>
                             <li>PHP</li>
                             <li>Python</li>
@@ -69,6 +78,7 @@ const AboutMe = () => {
                   <article className='tile is-child notification is-primary'>
                     <div className='content'>
                       <h4 className='title has-text-centered'>Skills, Tools && Experience</h4>
+                      <hr/>
                       <div className='columns is-mobile is-gapless'>
                         <div className='column'>
                           <ul>

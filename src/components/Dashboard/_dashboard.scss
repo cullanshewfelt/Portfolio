@@ -38,6 +38,7 @@ body {
   overflow: auto;
   background: rgb(255,103,0);
   background: $orangeToPurp;
+  // background: $orangeToBlue;
 }
 
 // .dashboard::before {
@@ -160,7 +161,7 @@ body {
   .has-navbar-fixed-top{
     padding-top: 12%;
     padding-bottom: 10%;
-    
+
   }
 }
 

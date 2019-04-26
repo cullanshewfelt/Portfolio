@@ -136,9 +136,12 @@ class Header extends React.Component {
             <div className={`navbar-item description-heading ${isHamburgerOpen ? 'navbar-item-open' : 'navbar-item-close'}`}>
               { this.typeEffect(parsedHeading) }
             </div>
-            <div className='navbar-item navbar-element'>
+             <div className='navbar-item navbar-element'>
               ::
             </div>
+          {/*  <div className={`navbar-item description-heading ${isHamburgerOpen ? 'navbar-item-open' : 'navbar-item-close'}`}>
+              Los Angeles, CA
+            </div>  */}
           </div>
           <div className='navbar-end'>  <div className='navbar-item navbar-element'>
               ||
@@ -168,3 +171,4 @@ class Header extends React.Component {
 }
 
 export default connect()(Header);
+// °
