@@ -8,9 +8,7 @@ import {initializeData} from '../../actions/dataActions';
 const Contact = () => {
   document.title = 'Cullan Shewfelt | Contact';
   return (
-    <div className='dashboard has-navbar-fixed-top'>
-      <div className='top-grid'></div>
-      <div className='tile is-ancestor'>
+      <div className='tile is-ancestor has-navbar-fixed-top'>
         <div className='tile is-parent is-3'>
         </div>
         <div className='tile is-parent is-6'>
@@ -24,8 +22,6 @@ const Contact = () => {
         <div className='tile is-parent is-3'>
         </div>
       </div>
-      <div className='bottom-grid'></div>
-    </div>
   )
 }
 

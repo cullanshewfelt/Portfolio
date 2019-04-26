@@ -8,7 +8,7 @@ import {initializeData} from '../../actions/dataActions';
 const AboutMe = () => {
   document.title = 'Cullan Shewfelt | Web Developer';
     return (
-        <div className='columns is-flex has-navbar-fixed-top is-desktop is-vcentered'>
+        <div className='columns has-navbar-fixed-top'>
           <div className='column'></div>
           <div className='column is-four-fifths'>
             <div className='tile is-ancestor'>

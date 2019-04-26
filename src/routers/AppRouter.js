@@ -1,5 +1,6 @@
 import React, { lazy, Suspense} from 'react';
 import { BrowserRouter, Link, NavLink, Route, Switch} from 'react-router-dom';
+import AboutMe from '../components/AboutMe/AboutMe';
 import Contact from '../components/Contact/Contact';
 import Dashboard from '../components/Dashboard/Dashboard';
 import Header from '../components/SubComponents/Header/Header';
@@ -13,8 +14,10 @@ const AppRouter = () => (
     <div>
       <Header/>
       <Suspense fallback={<Loader/>}>
+      // <Route path='/' component={Dashboard} exact={true}/>
+      <Dashboard/>
         <Switch>
-          <Route path='/' component={Dashboard} exact={true}/>
+          <Route path='/' component={AboutMe} exact={true}/>
           <Route path='/Contact' component={Contact} exact={true}/>
           <Route path='/Portfolio' component={Portfolio} exact={true}/>
         </Switch>
