@@ -13,9 +13,10 @@ const Portfolio = () => {
       </div>
       <div className='tile is-parent is-6'>
         <article className='tile is-child notification is-primary has-text-centered'>
-          <p className='title'>Portfolio</p>
-          <p className='subtitle'>Some of My Work</p>
           <div className='content'>
+            <h4 className='title'>Portfolio</h4>
+            <hr/>
+            <p className='subtitle'>Some of My Work</p>
           </div>
         </article>
       </div>

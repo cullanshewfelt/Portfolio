@@ -13,11 +13,11 @@ const Contact = () => {
         </div>
         <div className='tile is-parent is-6'>
           <article className='tile is-child notification is-primary has-text-centered'>
-            <p className='title'>Contact Me</p>
-            <hr/>
-            <p className='subtitle'>Aligned with the right tile</p>
             <div className='content'>
-            </div>
+              <h4 className='title'>Contact Me</h4>
+              <hr/>
+              {/* <p className='subtitle'>Aligned with the right tile</p> */}
+          </div>
           </article>
         </div>
         <div className='tile is-parent is-3'>
