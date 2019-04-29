@@ -147,19 +147,35 @@ class Header extends React.Component {
             <div className='navbar-item navbar-element'>
               ||
             </div>
-            <NavLink className={`navbar-item ${isHamburgerOpen ? 'navbar-item-open' : 'navbar-item-close'}`} activeClassName='selected' exact={true} to='/' onClick={() => {isHamburgerOpen && this.toggleHamburger(!isHamburgerOpen)}}>
+            <NavLink
+              className={`navbar-item ${isHamburgerOpen ? 'navbar-item-open' : 'navbar-item-close'}`}
+              activeClassName='selected'
+              exact={true}
+              to='/'
+              onClick={() => {isHamburgerOpen && this.toggleHamburger(!isHamburgerOpen)}}
+            >
               Home {isHamburgerOpen && '|| About Me || Skills'}
             </NavLink>
             <div className='navbar-item navbar-element'>
               ||
             </div>
-            <NavLink className={`navbar-item ${isHamburgerOpen ? 'navbar-item-open' : 'navbar-item-close'}`} activeClassName='selected' to='/Portfolio' onClick={() => {isHamburgerOpen && this.toggleHamburger(!isHamburgerOpen)}}>
+            <NavLink
+              className={`navbar-item ${isHamburgerOpen ? 'navbar-item-open' : 'navbar-item-close'}`}
+              activeClassName='selected'
+              to='/Portfolio'
+              onClick={() => {isHamburgerOpen && this.toggleHamburger(!isHamburgerOpen)}}
+            >
               Portfolio
             </NavLink>
             <div className='navbar-item navbar-element'>
               ||
             </div>
-            <NavLink className={`navbar-item ${isHamburgerOpen ? 'navbar-item-open' : 'navbar-item-close'}`} activeClassName='selected' to='/Contact' onClick={() => {isHamburgerOpen && this.toggleHamburger(!isHamburgerOpen)}}>
+            <NavLink
+              className={`navbar-item ${isHamburgerOpen ? 'navbar-item-open' : 'navbar-item-close'}`}
+              activeClassName='selected'
+              to='/Contact'
+              onClick={() => {isHamburgerOpen && this.toggleHamburger(!isHamburgerOpen)}}
+            >
               Contact
             </NavLink>
             <div className='navbar-item navbar-element'>

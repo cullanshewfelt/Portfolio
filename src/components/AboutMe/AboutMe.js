@@ -15,7 +15,7 @@ const AboutMe = () => {
               <div className='tile is-vertical is-6'>
                 <div className='tile is-parent is-vertical'>
                   <article className='tile is-child notification is-primary'>
-                    <div className='content'>
+                    <div className='content has-text-centered'>
                       <h4 className='title has-text-centered'>About Me</h4>
                       <hr/>
                       Hello World!

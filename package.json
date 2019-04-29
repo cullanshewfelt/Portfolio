@@ -52,6 +52,7 @@
     "redux-thunk": "^2.3.0",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",
+    "svg-react-loader": "^0.4.6",
     "tar": "^4.4.8",
     "url-loader": "^1.1.2",
     "validator": "^10.11.0",
