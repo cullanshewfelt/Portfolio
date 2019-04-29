@@ -15,13 +15,14 @@ const AboutMe = () => {
               <div className='tile is-vertical is-6'>
                 <div className='tile is-parent is-vertical'>
                   <article className='tile is-child notification is-primary'>
-                    <div className='content has-text-centered'>
+                    <div className='content'>
                       <h4 className='title has-text-centered'>About Me</h4>
                       <hr/>
                       Hello World!
                       <br/>
                       My name is <strong>Cullan Shewfelt</strong> and
-                      I am a Web Developer from Los Angeles.
+                      I am a Web Developer native to Los Angeles. I code both Front-End and Back-End, although I prefer working with back-end applications,
+                      problem solving, and creating the logic and data structures that power applications.
                     </div>
                   </article>
                   <article className='tile is-child notification is-primary'>

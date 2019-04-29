@@ -5,20 +5,27 @@ import { withRouter } from 'react-router';
 import Loader from '../Loader';
 import SVG from 'react-inlinesvg';
 
-import EmailSVG from './images/icons/EmailSVG';
-import GitHubSVG from './images/icons/GitHubSVG';
-import LinkedInSVG from './images/icons/LinkedInSVG';
+import EmailSVG from '../../Icons/EmailSVG';
+import GitHubSVG from '../../Icons/GitHubSVG';
+import LinkedInSVG from '../../Icons/LinkedInSVG';
 
+// color reference:
 // blue: #00D4FF purps: #ff33eb neutral blue: 4dcce6
 
 const Footer = () => {
+  const defaultBackFill = '#000000';
+  const defaultMainFill = '#4dcce6';
+
   const [isHovered, setHover] = useState('');
-  const [mainFill, setMain] = useState('#4dcce6');
-  const [backFill, setBackground] = useState('#000000');
+  const [mainFill, setMain] = useState(defaultMainFill);
+  const [backFill, setBackground] = useState(defaultBackFill);
 
   const handleChange = () => {
-    !isHovered ? setMain('#000000') & setBackground('#4dcce6') : setMain('#4dcce6') & setBackground('#000000');
+    !!isHovered // switch main and back fills for hover effect
+      ? setMain(defaultMainFill) & setBackground(defaultBackFill)
+      : setMain(defaultBackFill) & setBackground(defaultMainFill)
   }
+
     return(
       <footer className='footer is-hidden-mobile'>
         <div className='content has-text-centered'>
@@ -31,7 +38,7 @@ const Footer = () => {
           >
             <LinkedInSVG props={isHovered === 'linkedin-icon'
               ? {className:'linkedin-icon social-icon', mainFill, backFill}
-              : {className:'linkedin-icon social-icon', mainFill: '#4dcce6', backFill: '#000000'}}/>
+              : {className:'linkedin-icon social-icon', mainFill: defaultMainFill, backFill: defaultBackFill}}/>
           </a>
           <a
             target='_blank'
@@ -42,7 +49,7 @@ const Footer = () => {
           >
             <GitHubSVG props={isHovered === 'github-icon'
               ? {className:'github-icon social-icon', mainFill, backFill}
-              : {className:'github-icon social-icon', mainFill: '#4dcce6', backFill: '#000000'}}/>
+              : {className:'github-icon social-icon', mainFill: defaultMainFill, backFill: defaultBackFill}}/>
           </a>
           <a
             target='_blank'
@@ -53,7 +60,7 @@ const Footer = () => {
           >
             <EmailSVG props={isHovered === 'email-icon'
               ? {className:'email-icon social-icon', mainFill, backFill}
-              : {className:'email-icon social-icon', mainFill: '#4dcce6', backFill: '#000000'}}/>
+              : {className:'email-icon social-icon', mainFill: defaultMainFill, backFill: defaultBackFill}}/>
          </a>
        </div>
      </footer>
