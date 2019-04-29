@@ -12,10 +12,12 @@ import LinkedInSVG from './images/icons/LinkedInSVG';
 // blue: #00D4FF purps: #ff33eb neutral blue: 4dcce6
 
 const Footer = () => {
-  const [fill, setFill] = useState('#4dcce6');
   const [isHovered, setHover] = useState('');
+  const [mainFill, setMain] = useState('#4dcce6');
+  const [backFill, setBackground] = useState('#000000');
+
   const handleChange = () => {
-    !!isHovered ? setFill('#00D4FF') : setFill('#ff33eb');
+    !isHovered ? setMain('#000000') & setBackground('#4dcce6') : setMain('#4dcce6') & setBackground('#000000');
   }
     return(
       <footer className='footer is-hidden-mobile'>
@@ -28,8 +30,8 @@ const Footer = () => {
             onMouseLeave={() => {setHover('') & handleChange()}}
           >
             <LinkedInSVG props={isHovered === 'linkedin-icon'
-              ? {className:'linkedin-icon social-icon', fill}
-              : {className:'linkedin-icon social-icon', fill: '#4dcce6'}}/>
+              ? {className:'linkedin-icon social-icon', mainFill, backFill}
+              : {className:'linkedin-icon social-icon', mainFill: '#4dcce6', backFill: '#000000'}}/>
           </a>
           <a
             target='_blank'
@@ -39,8 +41,8 @@ const Footer = () => {
             onMouseLeave={() => {setHover('') & handleChange()}}
           >
             <GitHubSVG props={isHovered === 'github-icon'
-              ? {className:'github-icon social-icon', fill}
-              : {className:'github-icon social-icon', fill: '#4dcce6'}}/>
+              ? {className:'github-icon social-icon', mainFill, backFill}
+              : {className:'github-icon social-icon', mainFill: '#4dcce6', backFill: '#000000'}}/>
           </a>
           <a
             target='_blank'
@@ -50,8 +52,8 @@ const Footer = () => {
             onMouseLeave={() => {setHover('') & handleChange()}}
           >
             <EmailSVG props={isHovered === 'email-icon'
-              ? {className:'email-icon social-icon', fill}
-              : {className:'email-icon social-icon', fill: '#4dcce6'}}/>
+              ? {className:'email-icon social-icon', mainFill, backFill}
+              : {className:'email-icon social-icon', mainFill: '#4dcce6', backFill: '#000000'}}/>
          </a>
        </div>
      </footer>
