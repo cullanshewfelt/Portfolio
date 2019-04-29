@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { connect } from 'react-redux';
-import {NavLink} from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { withRouter } from 'react-router';
 import Loader from '../Loader';
 import SVG from 'react-inlinesvg';
@@ -33,34 +33,34 @@ const Footer = () => {
             target='_blank'
             href='https://www.linkedin.com'
             title='LinkedIn Profile'
-            onMouseEnter={() => {setHover('linkedin-icon') & handleChange()}}
+            onMouseEnter={() => {setHover('linkedin-icon-footer') & handleChange()}}
             onMouseLeave={() => {setHover('') & handleChange()}}
           >
-            <LinkedInSVG props={isHovered === 'linkedin-icon'
-              ? {className:'linkedin-icon social-icon', mainFill, backFill}
-              : {className:'linkedin-icon social-icon', mainFill: defaultMainFill, backFill: defaultBackFill}}/>
+            <LinkedInSVG props={isHovered === 'linkedin-icon-footer'
+              ? {className:'linkedin-icon-footer social-icon', mainFill, backFill}
+              : {className:'linkedin-icon-footer social-icon', mainFill: defaultMainFill, backFill: defaultBackFill}}/>
           </a>
           <a
             target='_blank'
             href='https://www.github.com'
             title='Github Profile'
-            onMouseEnter={() => {setHover('github-icon') & handleChange()}}
+            onMouseEnter={() => {setHover('github-icon-footer') & handleChange()}}
             onMouseLeave={() => {setHover('') & handleChange()}}
           >
-            <GitHubSVG props={isHovered === 'github-icon'
-              ? {className:'github-icon social-icon', mainFill, backFill}
-              : {className:'github-icon social-icon', mainFill: defaultMainFill, backFill: defaultBackFill}}/>
+            <GitHubSVG props={isHovered === 'github-icon-footer'
+              ? {className:'github-icon-footer social-icon', mainFill, backFill}
+              : {className:'github-icon-footer social-icon', mainFill: defaultMainFill, backFill: defaultBackFill}}/>
           </a>
           <a
             target='_blank'
             href='mailto:cullanrocks@gmail.com'
             title='Email Me'
-            onMouseEnter={() => {setHover('email-icon') & handleChange()}}
+            onMouseEnter={() => {setHover('email-icon-footer') & handleChange()}}
             onMouseLeave={() => {setHover('') & handleChange()}}
           >
-            <EmailSVG props={isHovered === 'email-icon'
-              ? {className:'email-icon social-icon', mainFill, backFill}
-              : {className:'email-icon social-icon', mainFill: defaultMainFill, backFill: defaultBackFill}}/>
+            <EmailSVG props={isHovered === 'email-icon-footer'
+              ? {className:'email-icon-footer social-icon', mainFill, backFill}
+              : {className:'email-icon-footer social-icon', mainFill: defaultMainFill, backFill: defaultBackFill}}/>
          </a>
        </div>
      </footer>
