@@ -1,4 +1,8 @@
 .portfolio-dashboard {
-  padding-top: 14%;
+  padding-top: 12%;
   height: 300px;
+}
+
+.ReactModal__Overlay--after-open{
+  z-index: 100 !important;
 }

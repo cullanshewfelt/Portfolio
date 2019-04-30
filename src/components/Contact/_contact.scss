@@ -5,11 +5,6 @@
   background-color: $bluish-gray !important;
 }
 
-.contact-dashboard {
-  padding-top: 14%;
-  height: 300px;
-}
-
 .linkedin-icon{
   height: 3rem;
   margin: 0px 4% 0px 4%;
@@ -26,4 +21,39 @@
   height: 3rem;
   margin: 0px 4% 0px 4%;
   width: auto;
+}
+
+.contact-dashboard {
+  padding-top: 14%;
+  height: 300px;
+}
+
+@media only screen and (max-width: 1440px) {
+  .contact-dashboard{
+    padding-top: 12%;
+  }
+}
+
+@media only screen and (max-width: 1088px) {
+  .contact-dashboard{
+    padding-top: 18%;
+  }
+}
+
+@media only screen and (max-width: 788px) {
+  .contact-dashboard{
+    padding-top: 20%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .contact-dashboard{
+    padding-top: 30%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .contact-dashboard{
+    padding-top: 50%;
+  }
 }

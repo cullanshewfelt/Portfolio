@@ -1,7 +1,5 @@
 import React, {Component, lazy, Suspense} from 'react';
-import axios from 'axios';
 import {connect} from 'react-redux';
-import ReactModal from 'react-modal';
 import Loader from '../SubComponents/Loader';
 import {initializeData} from '../../actions/dataActions';
 
@@ -18,8 +16,6 @@ const AboutMe = () => {
                     <div className='content'>
                       <h4 className='title has-text-centered'>About Me</h4>
                       <hr/>
-                      Hello World!
-                      <br/>
                       My name is <strong>Cullan Shewfelt</strong> and
                       I am a Web Developer native to Los Angeles. I code both Front-End and Back-End, although I prefer
                       problem solving, and creating the logic and data structures that gives life to web-based applications.
@@ -27,9 +23,11 @@ const AboutMe = () => {
                   </article>
                   <article className='tile is-child notification is-primary'>
                     <div className='content'>
-                      <h4 className='title has-text-centered'>Continued...</h4>
+                      <h4 className='title has-text-centered'>Goals</h4>
                       <hr/>
-                      <p className='subtitle'>Middle tile</p>
+                      My philosophy on web development is simple: keep up to date with current and in-demand languages, frameworks,
+                      and ECMAScript syntax standards. I strive to learn more, and for my knowledge and skills to be valued not only now, but for
+                      years to come.
                     </div>
                   </article>
                 </div>
@@ -56,8 +54,8 @@ const AboutMe = () => {
                             <li>ReactJs</li>
                             <li>SQL / MySQL</li>
                             <li>Express</li>
-                            <li>Python</li>
                             <li>HTML5</li>
+                            <li>PHP</li>
                           </ul>
                         </div>
                         <div className='column'>
@@ -67,8 +65,8 @@ const AboutMe = () => {
                             <li>MongoDB</li>
                             <li>jQuery</li>
                             <li>SASS</li>
-                            <li>PHP</li>
                             <li>CSS3</li>
+                            <li>Python</li>
                           </ul>
                         </div>
                       </div>

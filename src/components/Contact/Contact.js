@@ -30,9 +30,14 @@ const Contact = () => {
               <h4 className='title'>Contact Me</h4>
               <hr/>
               <br/>
-              The best way to get in touch with me is through phone or email.
-              I can give you my number via email.
-              <br/>
+              <ul>
+                <li>
+                  The best way to get in touch with me is via phone or email.
+                </li>
+                <li>
+                  If you'd prefer to communicate by phone I can email you my number.
+                </li>
+              </ul>
               <br/>
               <br/>
               <a

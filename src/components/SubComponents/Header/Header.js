@@ -15,7 +15,7 @@ class Header extends React.Component {
       interval: null,
       isHamburgerOpen: false,
       heading: 'Web Developer',
-      headings: ['  Programmer', 'Web Developer', 'Software Engineer', '  Full Stack Dev'],
+      headings: ['Programmer', 'Web Developer', 'Software Engineer', 'Full Stack Dev'],
       typedEffect: '             ..'
     }
   }
@@ -35,7 +35,7 @@ class Header extends React.Component {
   toggleHeader = () => {
     let { headings } = this.state;
     let temp = setInterval(()=>{
-      headings.push(headings[0]);
+      headings = [...headings, headings[0]];
       headings.shift();
       this.setState({
         currentIndex: 0,
@@ -49,18 +49,12 @@ class Header extends React.Component {
   typeEffectHandler = () => {
     let { currentIndex, heading, typedEffect } = this.state;
     typedEffect.length < (heading.length)
-      ? currentIndex < (heading.length)
+      && currentIndex < (heading.length)
         && this.setState({
               currentIndex: currentIndex + 1,
               typedEffect: typedEffect + heading[currentIndex]
           })
-          & setTimeout(this.typeEffectHandler, 30)
-      : null
-      // typedEffect.length < (heading.length + 2)
-      //   && this.setState({
-      //       typedEffect: typedEffect + '.'
-      //     })
-      //     & setTimeout(this.typeEffectHandler, 30)
+          & setTimeout(this.typeEffectHandler, 30);
   }
 
   typeEffect = (parsedHeading) => {
@@ -115,7 +109,6 @@ class Header extends React.Component {
       <nav className='navbar is-fixed-top' role='navigation' aria-label='main navigation'>
         <div className='navbar-brand'>
           <div className='Spac3_Neon'>c s</div>
-          {/* <div className='gtek'>{!isHamburgerOpen ? ' - cullan shewfelt': ''}</div> */}
           <button
             onClick={() => this.toggleHamburger(!isHamburgerOpen)}
             className={`button navbar-burger ${isHamburgerOpen ? 'is-active' : ''}`}
