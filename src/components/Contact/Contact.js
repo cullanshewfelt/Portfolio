@@ -5,6 +5,8 @@ import LinkedInSVG from '../Icons/LinkedInSVG';
 import Loader from '../SubComponents/Loader';
 
 const Contact = () => {
+  document.title = 'Cullan Shewfelt | Contact';
+
   const defaultMainFill = '#000000';
   const defaultBackFill = '#4dcce6';
 
@@ -18,18 +20,20 @@ const Contact = () => {
       : setMain(defaultBackFill) & setBackground(defaultMainFill)
   }
 
-  document.title = 'Cullan Shewfelt | Contact';
-
   return (
-      <div className='tile is-ancestor has-navbar-fixed-top'>
+      <div className='tile is-ancestor contact-dashboard'>
         <div className='tile is-parent is-3'>
         </div>
         <div className='tile is-parent is-6'>
-          <article className='tile is-child notification is-primary has-text-centered contact-dashboard'>
+          <article className='tile is-child notification is-primary has-text-centered'>
             <div className='content'>
               <h4 className='title'>Contact Me</h4>
               <hr/>
-              
+              <br/>
+              The best way to get in touch with me is through phone or email.
+              I can give you my number via email.
+              <br/>
+              <br/>
               <br/>
               <a
                 target='_blank'
@@ -40,8 +44,9 @@ const Contact = () => {
               >
                 <EmailSVG props={isHovered === 'email-icon'
                   ? {className:'email-icon social-icon', mainFill, backFill}
-                  : {className:'email-icon social-icon', mainFill: defaultMainFill, backFill: defaultBackFill}}/>
-             </a>
+                  : {className:'email-icon social-icon', mainFill: defaultMainFill, backFill: defaultBackFill}}
+                />
+              </a>
               <a
                 target='_blank'
                 href='https://www.linkedin.com'
@@ -51,7 +56,8 @@ const Contact = () => {
               >
                 <LinkedInSVG props={isHovered === 'linkedin-icon'
                   ? {className:'linkedin-icon social-icon', mainFill, backFill}
-                  : {className:'linkedin-icon social-icon', mainFill: defaultMainFill, backFill: defaultBackFill}}/>
+                  : {className:'linkedin-icon social-icon', mainFill: defaultMainFill, backFill: defaultBackFill}}
+                />
               </a>
               <a
                 target='_blank'
@@ -62,10 +68,10 @@ const Contact = () => {
               >
                 <GitHubSVG props={isHovered === 'github-icon'
                   ? {className:'github-icon social-icon', mainFill, backFill}
-                  : {className:'github-icon social-icon', mainFill: defaultMainFill, backFill: defaultBackFill}}/>
+                  : {className:'github-icon social-icon', mainFill: defaultMainFill, backFill: defaultBackFill}}
+                />
               </a>
-
-          </div>
+            </div>
           </article>
         </div>
         <div className='tile is-parent is-3'>

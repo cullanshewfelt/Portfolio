@@ -21,8 +21,8 @@ const AboutMe = () => {
                       Hello World!
                       <br/>
                       My name is <strong>Cullan Shewfelt</strong> and
-                      I am a Web Developer native to Los Angeles. I code both Front-End and Back-End, although I prefer working with back-end applications,
-                      problem solving, and creating the logic and data structures that power applications.
+                      I am a Web Developer native to Los Angeles. I code both Front-End and Back-End, although I prefer
+                      problem solving, and creating the logic and data structures that gives life to web-based applications.
                     </div>
                   </article>
                   <article className='tile is-child notification is-primary'>
@@ -47,28 +47,28 @@ const AboutMe = () => {
                 <div className='tile is-parent'>
                   <article className='tile is-child notification is-primary'>
                     <div className='content'>
-                      <h4 className='title has-text-centered'>Languages && Frameworks</h4>
+                      <h4 className='title has-text-centered'>Languages & Frameworks</h4>
                       <hr/>
                       <div className='columns is-mobile is-gapless'>
                         <div className='column'>
                           <ul>
                             <li>JavaScript</li>
-                            <li>HTML5</li>
-                            <li>CSS3</li>
+                            <li>ReactJs</li>
                             <li>SQL / MySQL</li>
-                            <li>MongoDB</li>
-                            <li>PHP</li>
+                            <li>Express</li>
                             <li>Python</li>
+                            <li>HTML5</li>
                           </ul>
                         </div>
                         <div className='column'>
                           <ul>
                             <li>node.js</li>
-                            <li>ReactJs</li>
-                            <li>Express</li>
-                            <li>jQuery</li>
                             <li>Redux</li>
+                            <li>MongoDB</li>
+                            <li>jQuery</li>
                             <li>SASS</li>
+                            <li>PHP</li>
+                            <li>CSS3</li>
                           </ul>
                         </div>
                       </div>
@@ -78,13 +78,14 @@ const AboutMe = () => {
                 <div className='tile is-parent'>
                   <article className='tile is-child notification is-primary'>
                     <div className='content'>
-                      <h4 className='title has-text-centered'>Skills, Tools && Experience</h4>
+                      <h4 className='title has-text-centered'>Skills, Tools & Experience</h4>
                       <hr/>
                       <div className='columns is-mobile is-gapless'>
                         <div className='column'>
                           <ul>
-                            <li>RESTful APIs</li>
                             <li>Git / Github</li>
+                            <li>RESTful APIs</li>
+                            <li>CLI Apps</li>
                             <li>Bash Scripts</li>
                           </ul>
                         </div>
@@ -92,8 +93,8 @@ const AboutMe = () => {
                           <ul>
                             <li>Mac OSX</li>
                             <li>Windows</li>
-                            <li>Kali Linux</li>
-                            <li>Apple Scripts</li>
+                            {/* <li>Kali Linux</li> */}
+                            {/* <li>Apple Scripts</li> */}
                           </ul>
                         </div>
                     </div>

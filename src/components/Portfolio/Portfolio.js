@@ -8,7 +8,7 @@ import {initializeData} from '../../actions/dataActions';
 const Portfolio = () => {
   document.title = 'Cullan Shewfelt | Portfolio';
   return (
-    <div className='tile is-ancestor has-navbar-fixed-top'>
+    <div className='tile is-ancestor portfolio-dashboard'>
       <div className='tile is-parent is-3'>
       </div>
       <div className='tile is-parent is-6'>
