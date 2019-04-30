@@ -1,10 +1,7 @@
 const express = require('express');
-const moment = require('moment');
 var bodyParser = require('body-parser')
-const mysql = require('mysql');
 const path = require('path');
 const cors = require('cors');
-// const db = require('./dbconnection');
 const app = express();
 const util = require('util');
 util.inspect.defaultOptions.maxArrayLength = null;
