@@ -1,8 +1,8 @@
 import React, {Component, useState} from 'react';
 import {connect} from 'react-redux';
 import ReactDOM from 'react-dom';
-import Modal from 'react-modal';
 import Loader from '../SubComponents/Loader';
+import Modal from '../Modal/Modal';
 import {initializeData} from '../../actions/dataActions';
 import DLMusicHomepage from './images/screenshots/DL_Music_Homepage_1.png';
 import DLMusicLibrary from './images/screenshots/DL_Search_1.png';
@@ -14,23 +14,13 @@ const Portfolio = () => {
   const handleModal = () => {
     setModal(!isModalOpen);
   }
-  console.log(16, isModalOpen);
 
-  const customStyles = {
-    content : {
-      top                   : '50%',
-      left                  : '50%',
-      right                 : 'auto',
-      bottom                : 'auto',
-      marginRight           : '-50%',
-      transform             : 'translate(-50%, -50%)'
-    }
-  };
-
-// Make sure to bind modal to your appElement (http://reactcommunity.org/react-modal/accessibility/)
-  Modal.setAppElement('#root')
   return (
     <div>
+      <Modal
+        isModalOpen={isModalOpen}
+        handleModal={handleModal}
+      />
       <div className='columns has-navbar-fixed-top'>
         <div className='column'></div>
         <div className='column is-four-fifths'>
@@ -48,9 +38,9 @@ const Portfolio = () => {
                     <h4 className='title has-text-centered'>DL-Music</h4>
                     <hr/>
                     <img
-                      src={DLMusicLibrary}
                       alt='DL Music Homepage'
-                      onClick={()=>{handleModal()}}
+                      onClick={handleModal}
+                      src={DLMusicLibrary}
                     />
                   </div>
                 </article>
@@ -71,7 +61,11 @@ const Portfolio = () => {
                   <div className='content'>
                     <h4 className='title has-text-centered'>DL-Music</h4>
                     <hr/>
-                    <img src={DLMusicHomepage} alt='DL Music Homepage'/>
+                    <img
+                      alt='DL Music Homepage'
+                      onClick={handleModal}
+                      src={DLMusicHomepage}
+                    />
                   </div>
                 </article>
               </div>
@@ -88,18 +82,6 @@ const Portfolio = () => {
         </div>
         <div className='column'></div>
       </div>
-      <Modal
-        isOpen={isModalOpen}
-        onRequestClose={()=>{isModalOpen && handleModal()}}
-        style={customStyles}
-        contentLabel="Example Modal"
-      >
-
-        <h2>Hello</h2>
-        <button onClick={()=>{isModalOpen && handleModal()}}>close</button>
-        <div>I am a modal</div>
-        
-      </Modal>
     </div>
 
   )
