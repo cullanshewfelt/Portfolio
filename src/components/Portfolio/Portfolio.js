@@ -10,7 +10,6 @@ import DLMusicLibrary from './images/screenshots/DL_Search_1.png';
 const Portfolio = () => {
   document.title = 'Cullan Shewfelt | Portfolio';
   const [isModalOpen, setModal] = useState(false);
-
   const handleModal = () => {
     setModal(!isModalOpen);
   }
@@ -33,13 +32,15 @@ const Portfolio = () => {
                     <hr/>
                   </div>
                 </article>
-                <article className='tile is-child notification is-primary'>
+                <article
+                  className='tile is-child notification is-primary'
+                  onClick={handleModal}
+                >
                   <div className='content'>
                     <h4 className='title has-text-centered'>DL-Music</h4>
                     <hr/>
                     <img
                       alt='DL Music Homepage'
-                      onClick={handleModal}
                       src={DLMusicLibrary}
                     />
                   </div>
@@ -57,13 +58,15 @@ const Portfolio = () => {
             </div>
             <div className='tile is-vertical is-6'>
               <div className='tile is-parent'>
-                <article className='tile is-child notification is-primary'>
+                <article
+                  className='tile is-child notification is-primary'
+                  onClick={handleModal}
+                >
                   <div className='content'>
                     <h4 className='title has-text-centered'>DL-Music</h4>
                     <hr/>
                     <img
                       alt='DL Music Homepage'
-                      onClick={handleModal}
                       src={DLMusicHomepage}
                     />
                   </div>
