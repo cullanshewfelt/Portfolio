@@ -1,5 +1,6 @@
 # Cullan Shewfelt's Portfolio
-Work in progress.
+
+A perpetual work in progress.
 
 This is the code for [my personal portfolio](https://github.com/cullanshewfelt).
 
@@ -14,6 +15,7 @@ This is the code for [my personal portfolio](https://github.com/cullanshewfelt).
 -   [Bulma](https://github.com/jgthms/bulma) - Modern CSS framework based on Flexbox.
 -   [React](https://github.com/facebook/react) - A declarative, efficient, and flexible JavaScript library for building user interfaces.
 -   [React-Modal](https://github.com/reactjs/react-modal) - Accessible modal dialog component for React.
+-   [React-Router](https://github.com/ReactTraining/react-router) - Declarative routing for React.
 -   [Sass](https://github.com/sass/sass) - Sass makes CSS fun!
 
 ## [Contributors](#contributors)
