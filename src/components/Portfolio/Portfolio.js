@@ -20,7 +20,7 @@ const Portfolio = () => {
         isModalOpen={isModalOpen}
         handleModal={handleModal}
       />
-      <div className='columns has-navbar-fixed-top'>
+      <div className={isModalOpen ? 'columns has-navbar-fixed-top' : 'columns has-navbar-fixed-top modal-open'}>
         <div className='column'></div>
         <div className='column is-four-fifths'>
           <div className='tile is-ancestor'>

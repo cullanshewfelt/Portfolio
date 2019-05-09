@@ -25,7 +25,7 @@ const AboutMe = () => {
                     <div className='content'>
                       <h4 className='title has-text-centered'>Goals</h4>
                       <hr/>
-                      My philosophy on web development is simple: keep up to date with current and in-demand languages, frameworks,
+                      My philosophy on web development is simple: keep up to date with current and in-demand languages, frameworks, libraries,
                       and ECMAScript syntax standards. I strive to learn more, and for my knowledge and skills to be valued not only now, but for
                       years to come.
                     </div>

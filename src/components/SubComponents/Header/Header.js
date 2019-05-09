@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { connect } from 'react-redux';
 import Loader from '../Loader';
 import {NavLink} from 'react-router-dom';
-import Typist from 'react-typist'; // adds a typing / typewriter animation effect  i think it would be cool for the header
 import {initializeData} from '../../../actions/dataActions';
 
 class Header extends React.Component {
@@ -93,7 +92,6 @@ class Header extends React.Component {
   }
 
   render(){
-    // console.log(this.state.typedEffect.length === this.state.heading.length + 2)
     let { currentIndex, heading, headings, isHamburgerOpen, typedEffect} = this.state;
     typedEffect = `${typedEffect}..`
     let remainingSpace = 19 - ((19 - typedEffect.length)/2) - 2;
@@ -108,7 +106,7 @@ class Header extends React.Component {
     return(
       <nav className='navbar is-fixed-top' role='navigation' aria-label='main navigation'>
         <div className='navbar-brand'>
-          <div className='Spac3_Neon'>c s</div>
+          <div className='logo'>c s</div>
           <button
             onClick={() => this.toggleHamburger(!isHamburgerOpen)}
             className={`button navbar-burger ${isHamburgerOpen ? 'is-active' : ''}`}
@@ -132,9 +130,6 @@ class Header extends React.Component {
             <div className='navbar-item navbar-element'>
               ::
             </div>
-            {/*  <div className={`navbar-item description-heading ${isHamburgerOpen ? 'navbar-item-open' : 'navbar-item-close'}`}>
-              Los Angeles, CA
-            </div>  */}
           </div>
           <div className='navbar-end'>
             <div className='navbar-item navbar-element'>

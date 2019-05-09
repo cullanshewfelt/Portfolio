@@ -20,20 +20,13 @@
   background-color:black;
 }
 
-.Spac3_Neon{ // logo: my favorite font
+.logo{ // logo: my favorite font
   color: $bluish-gray;
-  font-family: Spac3_Neon;
+  font-family: logo;
   font-size: 44px;
   padding: 0px 16px 0 24px;
   margin-bottom: 0px;
   margin-right: 16px;
-}
-
-.gtek{ // hidden on fullscreen
-  color: $bluish-gray;
-  font-family: Gravedigger;
-  margin-top: 16px;
-  margin-left: -16px;
 }
 
 .navbar-item-close{
@@ -94,9 +87,7 @@ a.navbar-item:hover {
 
 
 @media only screen and (min-width: 1024px) {
-  .gtek { // hides on desktop
-    display: none;
-  }
+
 }
 
 @media only screen and (max-width: 1087px) {
@@ -106,32 +97,15 @@ a.navbar-item:hover {
 }
 
 @media only screen and (max-width: 788px) {
-  .gtek {
-    margin-top: 20px;
-    font-size: 16px;
-  }
+
 }
 
 @media only screen and (max-width: 600px) {
-  .gtek {
-    margin-top: 24px;
-    margin-left: 0;
-    font-size: 13px;
-  }
-  .Spac3_Neon{ // my favorite
-    color: $bluish-gray;
-    font-family: Spac3_Neon;
-    font-size: 44px;
+  .logo{ // my favorite
     padding: 0 0 0 16px;
-    margin-bottom: 0px;
     margin-right: 8px;
   }
 }
 
 @media only screen and (max-width: 400px) {
-  .gtek {
-    margin-top: 22px;
-    margin-left: 0;
-    font-size: 12px;
-  }
 }
