@@ -1,8 +1,7 @@
 import React, {Component, lazy, Suspense} from 'react';
-import axios from 'axios';
 import {connect} from 'react-redux';
 import ReactModal from 'react-modal';
-import Loader from '../SubComponents/Loader';
+
 import {initializeData} from '../../actions/dataActions';
 
 const Dashboard = () => {

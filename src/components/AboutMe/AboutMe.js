@@ -1,6 +1,6 @@
 import React, {Component, lazy, Suspense} from 'react';
 import {connect} from 'react-redux';
-import Loader from '../SubComponents/Loader';
+
 import {initializeData} from '../../actions/dataActions';
 
 const AboutMe = () => {

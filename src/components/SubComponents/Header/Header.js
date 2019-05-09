@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { connect } from 'react-redux';
-import Loader from '../Loader';
 import {NavLink} from 'react-router-dom';
 import {initializeData} from '../../../actions/dataActions';
 

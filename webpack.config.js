@@ -30,7 +30,7 @@ module.exports = {
       loader: 'url-loader?limit=8192'
     },
     {
-      test: /\.(woff|woff2|eot|ttf|otf)$/,
+      test: /\.(woff|woff2|eot|ttf|otf|gif)$/,
       use: [
         'file-loader'
       ]

@@ -2,7 +2,7 @@ import React, {Component, useState} from 'react';
 import EmailSVG from '../Icons/EmailSVG';
 import GitHubSVG from '../Icons/GitHubSVG';
 import LinkedInSVG from '../Icons/LinkedInSVG';
-import Loader from '../SubComponents/Loader';
+
 
 const Contact = () => {
   document.title = 'Cullan Shewfelt | Contact';

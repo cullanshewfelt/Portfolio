@@ -1,7 +1,7 @@
 import React, {Component, useState} from 'react';
 import {connect} from 'react-redux';
 import ReactDOM from 'react-dom';
-import Loader from '../SubComponents/Loader';
+
 import Modal from '../Modal/Modal';
 import {initializeData} from '../../actions/dataActions';
 import DLMusicHomepage from './images/screenshots/DL_Music_Homepage_1.png';
