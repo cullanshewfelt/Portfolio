@@ -18,7 +18,7 @@ const Portfolio = () => {
   }
 
   const dlmusic = {
-    description: '',
+    description: 'PHP, Javascript',
     images: [DLMusicHomepage, DLMusicLibrary],
     link: 'www.dl-music.com',
     title: 'DL Music'

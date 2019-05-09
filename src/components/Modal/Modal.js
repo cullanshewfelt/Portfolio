@@ -19,7 +19,7 @@ const Modal = (props) => {
     };
 
 
-  console.log(20, selectedProject);
+  // console.log(20, selectedProject);
 
   ReactModal.setAppElement('#root')
   return (
@@ -37,17 +37,16 @@ const Modal = (props) => {
         </button>
         <h3 className='title' style={{textAlign: 'center'}}>{selectedProject.title}</h3>
         <hr/>
-        <div>I am a modal</div>
         <Slider {...settings}>
-          
-          {
-            selectedProject.images && selectedProject.images.map((image) => {
-              <div>
-                <img src={image}></img>
-              </div>
-            })
-          }
+          {selectedProject.images && selectedProject.images.map((image, x) => {
+              return(
+                <div key={x} class='modal-image'>
+                  <img src={image}></img>
+                </div>
+              )
+          })}
         </Slider>
+        <div>{selectedProject.description}</div>
       </ReactModal>
     </div>
   )

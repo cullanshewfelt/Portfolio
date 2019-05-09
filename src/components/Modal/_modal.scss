@@ -25,11 +25,20 @@
   border-radius: 10px 10px 10px 10px;
   background: $bluish-gray;
   color: black;
-  height: 75%;
+  height: 85%;
   line-height: 1;
-  max-height: 75%;
-  padding: $l-size;
+  max-height: 85%;
+  padding: $m-size;
   outline: none;
   overflow: hidden;
-  width: 75%;
+  width: 85%;
 }
+
+.slick-initialized {
+  margin: auto;
+  max-width: 65%;
+}
+
+// .modal-image {
+//   max-width: 50%;
+// }
