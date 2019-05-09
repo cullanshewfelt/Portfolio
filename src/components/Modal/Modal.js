@@ -15,7 +15,7 @@ const Modal = (props) => {
   }
 
   const settings = {
-      centerMode: true,
+      // centerMode: true,
       dots: true,
       touchMove: true
     };
@@ -37,18 +37,21 @@ const Modal = (props) => {
           style={{float: 'left'}}
         >X
         </button>
-        <h3 className='title' style={{textAlign: 'center'}}>{selectedProject.title}</h3>
+        <h3 className='title modal-title' style={{textAlign: 'center'}}>{selectedProject.title}</h3>
         <hr/>
-        <Slider {...settings}>
-          {selectedProject.images && selectedProject.images.map((image, x) => {
-              return(
-                <div key={x} className='modal-image'>
-                  <img src={image}></img>
-                </div>
-              )
-          })}
-        </Slider>
-        <div>{selectedProject.description}</div>
+        <div className='slider-container'>
+          <Slider {...settings}>
+            {selectedProject.images && selectedProject.images.map((image, x) => {
+                return(
+                  <div key={x} className='modal-image'>
+                    <img src={image}></img>
+                  </div>
+                )
+            })}
+            <div>{selectedProject.description}</div>
+          </Slider>
+        </div>
+        {/* <div>{selectedProject.description}</div> */}
       </ReactModal>
     </div>
   )

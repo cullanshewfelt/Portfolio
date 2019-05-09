@@ -1,11 +1,13 @@
 import React, {Component, useState} from 'react';
 import {connect} from 'react-redux';
+import Modal from '../Modal/Modal';
 import ReactDOM from 'react-dom';
 
-import Modal from '../Modal/Modal';
-import {initializeData} from '../../actions/dataActions';
 import DLMusicHomepage from './images/screenshots/DL_Music_Homepage_1.png';
 import DLMusicLibrary from './images/screenshots/DL_Search_1.png';
+import MLBAnalysisMain from './images/screenshots/MLB_Analysis_Main.png';
+import MLBAnalysisRoster from './images/screenshots/MLB_Analysis_Roster.png';
+
 
 const Portfolio = () => {
   document.title = 'Cullan Shewfelt | Portfolio';
@@ -26,7 +28,7 @@ const Portfolio = () => {
 
   const mlbAnalysis = {
     description: '',
-    images: [DLMusicHomepage, DLMusicLibrary],
+    images: [MLBAnalysisMain, MLBAnalysisRoster],
     link: 'www.dl-music.com',
     title: 'MLB Analysis'
   }
@@ -60,7 +62,7 @@ const Portfolio = () => {
                     <hr/>
                     <img
                       alt='DL Music Homepage'
-                      src={dlmusic.images[1]}
+                      src={mlbAnalysis.images[0]}
                       title='Click To View Details'
                     />
                   </div>
