@@ -33,7 +33,7 @@ const Portfolio = () => {
                   </div>
                 </article>
                 <article
-                  className='tile is-child notification is-primary'
+                  className='tile is-child notification is-primary portfolio-project'
                   onClick={handleModal}
                 >
                   <div className='content'>
@@ -42,6 +42,7 @@ const Portfolio = () => {
                     <img
                       alt='DL Music Homepage'
                       src={DLMusicLibrary}
+                      title='Click To View Details'
                     />
                   </div>
                 </article>
@@ -59,7 +60,7 @@ const Portfolio = () => {
             <div className='tile is-vertical is-6'>
               <div className='tile is-parent'>
                 <article
-                  className='tile is-child notification is-primary'
+                  className='tile is-child notification is-primary portfolio-project'
                   onClick={handleModal}
                 >
                   <div className='content'>
@@ -68,6 +69,7 @@ const Portfolio = () => {
                     <img
                       alt='DL Music Homepage'
                       src={DLMusicHomepage}
+                      title='Click To View Details'
                     />
                   </div>
                 </article>
