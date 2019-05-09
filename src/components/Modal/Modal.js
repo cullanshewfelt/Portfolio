@@ -15,7 +15,9 @@ const Modal = (props) => {
   }
 
   const settings = {
-      dots: true
+      centerMode: true,
+      dots: true,
+      touchMove: true
     };
 
 
@@ -40,7 +42,7 @@ const Modal = (props) => {
         <Slider {...settings}>
           {selectedProject.images && selectedProject.images.map((image, x) => {
               return(
-                <div key={x} class='modal-image'>
+                <div key={x} className='modal-image'>
                   <img src={image}></img>
                 </div>
               )
