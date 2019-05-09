@@ -10,15 +10,34 @@ import DLMusicLibrary from './images/screenshots/DL_Search_1.png';
 const Portfolio = () => {
   document.title = 'Cullan Shewfelt | Portfolio';
   const [isModalOpen, setModal] = useState(false);
-  const handleModal = () => {
+  const [selectedProject, setProject] = useState({});
+
+  const handleModal = (project) => {
+    !isModalOpen && setProject(project);
     setModal(!isModalOpen);
   }
+
+  const dlmusic = {
+    description: '',
+    images: [DLMusicHomepage, DLMusicLibrary],
+    link: 'www.dl-music.com',
+    title: 'DL Music'
+  }
+
+  const mlbAnalysis = {
+    description: '',
+    images: [DLMusicHomepage, DLMusicLibrary],
+    link: 'www.dl-music.com',
+    title: 'MLB Analysis'
+  }
+
 
   return (
     <div>
       <Modal
-        isModalOpen={isModalOpen}
         handleModal={handleModal}
+        isModalOpen={isModalOpen}
+        selectedProject={selectedProject}
       />
       <div className={isModalOpen ? 'columns has-navbar-fixed-top' : 'columns has-navbar-fixed-top modal-open'}>
         <div className='column'></div>
@@ -34,14 +53,14 @@ const Portfolio = () => {
                 </article>
                 <article
                   className='tile is-child notification is-primary portfolio-project'
-                  onClick={handleModal}
+                  onClick={() => {handleModal(mlbAnalysis)}}
                 >
                   <div className='content'>
-                    <h4 className='title has-text-centered'>DL-Music</h4>
+                    <h4 className='title has-text-centered'>{mlbAnalysis.title}</h4>
                     <hr/>
                     <img
                       alt='DL Music Homepage'
-                      src={DLMusicLibrary}
+                      src={dlmusic.images[1]}
                       title='Click To View Details'
                     />
                   </div>
@@ -61,10 +80,10 @@ const Portfolio = () => {
               <div className='tile is-parent'>
                 <article
                   className='tile is-child notification is-primary portfolio-project'
-                  onClick={handleModal}
+                  onClick={() => {handleModal(dlmusic)}}
                 >
                   <div className='content'>
-                    <h4 className='title has-text-centered'>DL-Music</h4>
+                    <h4 className='title has-text-centered'>{dlmusic.title}</h4>
                     <hr/>
                     <img
                       alt='DL Music Homepage'
