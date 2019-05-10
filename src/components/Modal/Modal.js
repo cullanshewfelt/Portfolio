@@ -14,18 +14,11 @@ const Modal = (props) => {
     isModalOpen && handleModal();
   }
 
-  // const customPaging = () => {
-  //   selectedProject.images && selectedProject.images.forEach((image) => (
-  //         <a>
-  //           <img src={image} />
-  //         </a>
-  //   )))}
-
-
   const settings = {
       // autoplay: true,
       // autoplaySpeed: 2000,
       // centerMode: true,
+      // this customPaging works but there is no image to description component so nothing displays for it AND the user won't know where to click
       // customPaging: (i) => <img src={selectedProject.images[i]}/>,
       dots: true,
       swipeToSlide: true,
@@ -43,7 +36,10 @@ const Modal = (props) => {
         </li>
       ))}
       {selectedProject.github &&
-        <strong><u><a target='blank' href={selectedProject.github}>View On Github</a></u></strong>
+        <strong><u><a target='blank' href={selectedProject.github}>View Code On Github</a></u></strong>
+      }
+      {selectedProject.link &&
+        <strong><u><a target='blank' href={selectedProject.link}>View Website</a></u></strong>
       }
     </div>
   )
@@ -75,6 +71,7 @@ const Modal = (props) => {
           </Slider>
         </div>
         <div style={{textAlign: 'center'}}>Scroll Through The Images To Get Details Of This Project</div>
+
       </ReactModal>
     </div>
   )

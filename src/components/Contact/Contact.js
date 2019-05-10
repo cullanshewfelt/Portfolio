@@ -54,7 +54,7 @@ const Contact = () => {
               </a>
               <a
                 target='_blank'
-                href='https://www.linkedin.com'
+                href='https://www.linkedin.com/in/cullan-shewfelt'
                 title='LinkedIn Profile'
                 onMouseEnter={() => {setHover('linkedin-icon') & handleChange()}}
                 onMouseLeave={() => {setHover('') & handleChange()}}
@@ -66,7 +66,7 @@ const Contact = () => {
               </a>
               <a
                 target='_blank'
-                href='https://www.github.com'
+                href='https://github.com/cullanshewfelt'
                 title='Github Profile'
                 onMouseEnter={() => {setHover('github-icon') & handleChange()}}
                 onMouseLeave={() => {setHover('') & handleChange()}}

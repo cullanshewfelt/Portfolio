@@ -30,7 +30,7 @@ const Footer = () => {
         <div className='content has-text-centered'>
           <a
             target='_blank'
-            href='https://www.linkedin.com'
+            href='https://www.linkedin.com/in/cullan-shewfelt'
             title='LinkedIn Profile'
             onMouseEnter={() => {setHover('linkedin-icon-footer') & handleChange()}}
             onMouseLeave={() => {setHover('') & handleChange()}}
@@ -41,7 +41,7 @@ const Footer = () => {
           </a>
           <a
             target='_blank'
-            href='https://www.github.com'
+            href='https://github.com/cullanshewfelt'
             title='Github Profile'
             onMouseEnter={() => {setHover('github-icon-footer') & handleChange()}}
             onMouseLeave={() => {setHover('') & handleChange()}}

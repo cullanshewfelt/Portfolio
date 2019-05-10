@@ -28,7 +28,7 @@ const Portfolio = () => {
                   I\'ve increased the search engine performance by creating booleans to help filter through the SQL database. \
                   Managed our catalog\'s metadata by creating scripts to export into a variety of formats to deliver to studios, producers, editors etc.',
     images: [DLMusicLibrary, DLMusicHomepage],
-    link: 'www.dl-music.com',
+    link: 'http://www.dl-music.com',
     title: 'DL Music'
   }
 
