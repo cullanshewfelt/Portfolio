@@ -32,6 +32,20 @@ const Portfolio = () => {
     title: 'DL Music'
   }
 
+  const dlmusicRework = {
+    description: 'I\'ve been the sole developer and IT specialist at DL Music since November 2018. \
+                  DL Music is a publishing company that licenses a selective catalog of music to film and television shows. \
+                  The catalog features over 50,000 tracks from composers all over the world. \
+                  I inhereted a messy PHP / SQL codebase over 10 years old, and have been working to modernize it and enhance it\s features. \
+                  So far I helped redesign the UI, debugged lots of code, and added notes for clarity to future developers. \
+                  I\'ve increased the search engine performance by creating booleans to help filter through the SQL database. \
+                  Managed our catalog\'s metadata by creating scripts to export into a variety of formats to deliver to studios, producers, editors etc.',
+    github: 'https://github.com/cullanshewfelt/Metadata-Tagging-With-Redux',
+    images: [DLMusicLibrary, DLMusicHomepage],
+    link: '',
+    title: 'DL Music (Reworked In React)'
+  }
+
   const mlbAnalysis = {
     description: 'mlbAnalysis is a command line interface application that retrieves Major League Baseball data and statistics. \
                   My goal with mlbAnalysis was to create an app so I could track baseball stats for fantasy purposes. \
@@ -66,6 +80,22 @@ const Portfolio = () => {
                 </article>
                 <article
                   className='tile is-child notification is-primary portfolio-project'
+                  onClick={() => {handleModal(dlmusicRework)}}
+                >
+                  <div className='content'>
+                    <h4 className='title has-text-centered'>{dlmusicRework.title}</h4>
+                    <hr/>
+                    <img
+                      alt='DL Music Homepage'
+                      src={dlmusicRework.images[0]}
+                      title='Click To View Details'
+                    />
+                  </div>
+                </article>
+              </div>
+              <div className='tile is-parent'>
+                <article
+                  className='tile is-child notification is-primary portfolio-project'
                   onClick={() => {handleModal(mlbAnalysis)}}
                 >
                   <div className='content'>
@@ -76,15 +106,6 @@ const Portfolio = () => {
                       src={mlbAnalysis.images[0]}
                       title='Click To View Details'
                     />
-                  </div>
-                </article>
-              </div>
-              <div className='tile is-parent'>
-                <article className='tile is-child notification is-primary'>
-                  <div className='content'>
-                    <h4 className='title has-text-centered'>Continued...</h4>
-                    <hr/>
-                    <p className='subtitle'>Bottom Tile</p>
                   </div>
                 </article>
               </div>
@@ -111,6 +132,15 @@ const Portfolio = () => {
                   <div className='content'>
                     <h4 className='title has-text-centered'>Skills, Tools & Experience</h4>
                     <hr/>
+                  </div>
+                </article>
+              </div>
+              <div className='tile is-parent'>
+                <article className='tile is-child notification is-primary has-text-centered'>
+                  <div className='content'>
+                    <h4 className='title'>Portfolio</h4>
+                    <hr/>
+                    Click on an image to see details about that project.
                   </div>
                 </article>
               </div>
