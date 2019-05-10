@@ -23,23 +23,19 @@ const Portfolio = () => {
     description: 'I\'ve been the sole developer and IT specialist at DL Music since November 2018. \
                   DL Music is a publishing company that licenses a selective catalog of music to film and television shows. \
                   The catalog features over 50,000 tracks from composers all over the world. \
-                  I inhereted a messy PHP / SQL codebase over 10 years old, and have been working to modernize it and enhance it\s features. \
-                  So far I helped redesign the UI, debugged lots of code, and added notes for clarity to future developers. \
+                  I inhereted a messy PHP / SQL codebase over 10 years old, and have been working to modernize it\'s UI and enhance it\'s features. \
+                  In addition to the makeover, I\'ve debugged lots of code, added notes for clarity to future developers, reogranized the file structure for less confusion, and got rid of unused code. \
                   I\'ve increased the search engine performance by creating booleans to help filter through the SQL database. \
-                  Managed our catalog\'s metadata by creating scripts to export into a variety of formats to deliver to studios, producers, editors etc.',
+                  Managed our catalog\'s metadata, and created scripts to export it into a variety of formats to deliver to studios, producers, editors, music supervisors etc.',
     images: [DLMusicLibrary, DLMusicHomepage],
     link: 'http://www.dl-music.com',
     title: 'DL Music'
   }
 
   const dlmusicRework = {
-    description: 'I\'ve been the sole developer and IT specialist at DL Music since November 2018. \
-                  DL Music is a publishing company that licenses a selective catalog of music to film and television shows. \
-                  The catalog features over 50,000 tracks from composers all over the world. \
-                  I inhereted a messy PHP / SQL codebase over 10 years old, and have been working to modernize it and enhance it\s features. \
-                  So far I helped redesign the UI, debugged lots of code, and added notes for clarity to future developers. \
-                  I\'ve increased the search engine performance by creating booleans to help filter through the SQL database. \
-                  Managed our catalog\'s metadata by creating scripts to export into a variety of formats to deliver to studios, producers, editors etc.',
+    description: 'This is my attempt ro redesign the DL Music website but in React. \
+                  My goal was create an application using React and Redux to limit the overall nu mber of server requests, in favor of a longer initial loading time. \
+                  I knew this had to be built using the existing SQL databases and data structures so both websites could be operational simultaneously.',
     github: 'https://github.com/cullanshewfelt/Metadata-Tagging-With-Redux',
     images: [DLMusicLibrary, DLMusicHomepage],
     link: '',
