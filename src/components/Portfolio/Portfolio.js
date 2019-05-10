@@ -21,7 +21,7 @@ const Portfolio = () => {
 
   const dlmusic = {
     description: 'PHP, Javascript',
-    images: [DLMusicHomepage, DLMusicLibrary],
+    images: [DLMusicLibrary, DLMusicHomepage],
     link: 'www.dl-music.com',
     title: 'DL Music'
   }
@@ -47,10 +47,11 @@ const Portfolio = () => {
           <div className='tile is-ancestor'>
             <div className='tile is-vertical is-6'>
               <div className='tile is-parent is-vertical'>
-                <article className='tile is-child notification is-primary'>
+                <article className='tile is-child notification is-primary has-text-centered'>
                   <div className='content'>
-                    <h4 className='title has-text-centered'>Portfolio</h4>
+                    <h4 className='title'>Portfolio</h4>
                     <hr/>
+                    Click on an image to see details about that project.
                   </div>
                 </article>
                 <article
@@ -89,7 +90,7 @@ const Portfolio = () => {
                     <hr/>
                     <img
                       alt='DL Music Homepage'
-                      src={DLMusicHomepage}
+                      src={dlmusic.images[0]}
                       title='Click To View Details'
                     />
                   </div>

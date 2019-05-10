@@ -1,4 +1,5 @@
 const { createStore, combineReducers, applyMiddleware, compose } = require('redux');
+// import {composeWithDevTools} from 'redux-devtools-extension/developmentOnly';
 var ReduxThunk = require('redux-thunk').default
 
 import dataReducers from '../reducers/dataReducers';

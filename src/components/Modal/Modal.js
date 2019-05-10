@@ -15,6 +15,8 @@ const Modal = (props) => {
   }
 
   const settings = {
+      // autoplay: true,
+      // autoplaySpeed: 2000,
       // centerMode: true,
       dots: true,
       touchMove: true
@@ -22,6 +24,11 @@ const Modal = (props) => {
 
 
   // console.log(20, selectedProject);
+
+  const ModalDescription = () => (
+    <div className=''>{selectedProject.description}</div>
+  )
+
 
   ReactModal.setAppElement('#root')
   return (
@@ -34,7 +41,7 @@ const Modal = (props) => {
       >
         <button
           onClick={closeModal}
-          style={{float: 'left'}}
+          style={{float: 'right'}}
         >X
         </button>
         <h3 className='title modal-title' style={{textAlign: 'center'}}>{selectedProject.title}</h3>
@@ -42,13 +49,13 @@ const Modal = (props) => {
         <div className='slider-container'>
           <Slider {...settings}>
             {selectedProject.images && selectedProject.images.map((image, x) => {
-                return(
-                  <div key={x} className='modal-image'>
-                    <img src={image}></img>
-                  </div>
-                )
+              return(
+                <div key={x} className='modal-image'>
+                  <img src={image}/>
+                </div>
+              )
             })}
-            <div>{selectedProject.description}</div>
+            <ModalDescription/>
           </Slider>
         </div>
         {/* <div>{selectedProject.description}</div> */}

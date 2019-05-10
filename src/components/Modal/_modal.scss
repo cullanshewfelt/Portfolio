@@ -20,15 +20,18 @@
   opacity: 0;
 }
 
+hr{
+  // margin: 1% 0;
+}
 
 .portfolio-detail-modal {
-  border-radius: 10px 10px 10px 10px;
+  border-radius: 1% 1% 1% 1%;
   background: $bluish-gray;
   color: black;
   height: 85%;
   line-height: 1;
   max-height: 85%;
-  padding: $m-size;
+  padding: 2%;
   outline: none;
   overflow: hidden;
   width: 85%;
@@ -51,7 +54,9 @@
 //   max-width: 50%;
 // }
 
-
+.modal-title{
+  color: black;
+}
 
 @media only screen and (max-width: 1440px) {
   .modal-title{
@@ -77,7 +82,15 @@
 }
 
 @media only screen and (max-width: 788px) {
-
+  .slider-container{
+    max-width: 100%;
+  }
+  button.slick-arrow.slick-prev::before{
+    display: none !important;
+  }
+  button.slick-arrow.slick-next::before{
+    display: none !important;
+  }
 }
 
 @media only screen and (max-width: 600px) {
