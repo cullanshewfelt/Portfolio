@@ -54,7 +54,7 @@ const Modal = (props) => {
         >X
         </button>
         <h3 className='title modal-title' style={{textAlign: 'center'}}>{selectedProject.title}</h3>
-        <hr/>
+        <hr className='modal-break'/>
         <div className='slider-container'>
           <Slider {...settings}>
             {selectedProject.images && selectedProject.images.map((image, x) => (
