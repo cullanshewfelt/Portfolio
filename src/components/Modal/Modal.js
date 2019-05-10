@@ -26,7 +26,16 @@ const Modal = (props) => {
   // console.log(20, selectedProject);
 
   const ModalDescription = () => (
-    <div className=''>{selectedProject.description}</div>
+    <div className='project-description'>
+      <br/>
+      {selectedProject.description.split('. ').map((desc, x) => (
+        <li key={x}>
+          {desc.trim()}
+          <br/>
+          <br/>
+        </li>
+      ))}
+    </div>
   )
 
 
@@ -48,13 +57,11 @@ const Modal = (props) => {
         <hr/>
         <div className='slider-container'>
           <Slider {...settings}>
-            {selectedProject.images && selectedProject.images.map((image, x) => {
-              return(
-                <div key={x} className='modal-image'>
-                  <img src={image}/>
-                </div>
-              )
-            })}
+            {selectedProject.images && selectedProject.images.map((image, x) => (
+              <div key={x} className='modal-image'>
+                <img src={image}/>
+              </div>
+            ))}
             <ModalDescription/>
           </Slider>
         </div>

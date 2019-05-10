@@ -27,7 +27,10 @@ const Portfolio = () => {
   }
 
   const mlbAnalysis = {
-    description: '',
+    description: 'mlbAnalysis is a command line interface application that retrieves Major League Baseball data and statistics. \
+                  My goal with mlbAnalysis was to create an app so I could track baseball stats for fantasy purposes. \
+                  The app was built with Javascript in node.js. \
+                  The user interface is designed with inquirer.js.',
     images: [MLBAnalysisMain, MLBAnalysisRoster],
     link: 'www.dl-music.com',
     title: 'MLB Analysis'
