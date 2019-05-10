@@ -21,9 +21,6 @@
 }
 
 
-
-
-
 .portfolio-detail-modal {
   border-radius: 1% 1% 1% 1%;
   background: $bluish-gray;
@@ -52,16 +49,18 @@ hr.modal-break{
 
 .slider-container{
   margin: auto;
-  margin-top: 2%;
+  margin-top: 1%;
   max-width: 65%;
   margin-bottom: 40px;
+}
+
+.project-description{
+  padding-left: .5%;
 }
 
 ul{
   list-style-type: circle;
 }
-
-
 
 
 @media only screen and (max-width: 1440px) {

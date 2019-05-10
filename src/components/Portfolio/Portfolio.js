@@ -20,7 +20,13 @@ const Portfolio = () => {
   }
 
   const dlmusic = {
-    description: 'PHP, Javascript',
+    description: 'I\'ve been the sole developer and IT specialist at DL Music since November 2018. \
+                  DL Music is a publishing company that licenses a selective catalog of music to film and television shows. \
+                  The catalog features over 50,000 tracks from composers all over the world. \
+                  I inhereted a messy PHP / SQL codebase over 10 years old, and have been working to modernize it and enhance it\s features. \
+                  So far I helped redesign the UI, debugged lots of code, and added notes for clarity to future developers. \
+                  I\'ve increased the search engine performance by creating booleans to help filter through the SQL database. \
+                  Managed our catalog\'s metadata by creating scripts to export into a variety of formats to deliver to studios, producers, editors etc.',
     images: [DLMusicLibrary, DLMusicHomepage],
     link: 'www.dl-music.com',
     title: 'DL Music'
@@ -31,8 +37,9 @@ const Portfolio = () => {
                   My goal with mlbAnalysis was to create an app so I could track baseball stats for fantasy purposes. \
                   The app was built with Javascript in node.js. \
                   The user interface is designed with inquirer.js.',
+    github: 'https://github.com/cullanshewfelt/MLBanalysis',
     images: [MLBAnalysisMain, MLBAnalysisRoster],
-    link: 'www.dl-music.com',
+    link: '',
     title: 'MLB Analysis'
   }
 

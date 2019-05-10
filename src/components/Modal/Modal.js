@@ -14,16 +14,23 @@ const Modal = (props) => {
     isModalOpen && handleModal();
   }
 
+  // const customPaging = () => {
+  //   selectedProject.images && selectedProject.images.forEach((image) => (
+  //         <a>
+  //           <img src={image} />
+  //         </a>
+  //   )))}
+
+
   const settings = {
       // autoplay: true,
       // autoplaySpeed: 2000,
       // centerMode: true,
+      // customPaging: (i) => <img src={selectedProject.images[i]}/>,
       dots: true,
+      swipeToSlide: true,
       touchMove: true
     };
-
-
-  // console.log(20, selectedProject);
 
   const ModalDescription = () => (
     <div className='project-description'>
@@ -35,9 +42,11 @@ const Modal = (props) => {
           <br/>
         </li>
       ))}
+      {selectedProject.github &&
+        <strong><u><a target='blank' href={selectedProject.github}>View On Github</a></u></strong>
+      }
     </div>
   )
-
 
   ReactModal.setAppElement('#root')
   return (
@@ -59,13 +68,13 @@ const Modal = (props) => {
           <Slider {...settings}>
             {selectedProject.images && selectedProject.images.map((image, x) => (
               <div key={x} className='modal-image'>
-                <img src={image}/>
+                <img src={image} title='Scroll Through Images For Project Details'/>
               </div>
             ))}
             <ModalDescription/>
           </Slider>
         </div>
-        {/* <div>{selectedProject.description}</div> */}
+        <div style={{textAlign: 'center'}}>Scroll Through The Images To Get Details Of This Project</div>
       </ReactModal>
     </div>
   )
