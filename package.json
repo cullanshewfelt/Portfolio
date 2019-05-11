@@ -2,12 +2,12 @@
   "name": "cullan-shewfelt-portfolio",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server --hot & nodemon --max-old-space-size=4096 server.js",
     "server": "nodemon server.js",
-    "build": "react-scripts build",
+    "build": "webpack",
     "live-server": "live-server public/",
     "dev-server": "webpack-dev-server --hot",
     "heroku-postbuild": "npm run build"
