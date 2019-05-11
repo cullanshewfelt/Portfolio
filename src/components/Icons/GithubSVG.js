@@ -1,5 +1,5 @@
 import React from 'react';
-// 
+//
 const GitHubSVG = (props) => {
   const { backFill, className, mainFill } = props.props;
   return(
@@ -25,10 +25,11 @@ const GitHubSVG = (props) => {
           height='512'
           id='rect2987'
           style={{
-              fill: backFill,
-              fillOpacity: 1,
-              fillRule: 'nonzero',
-              stroke: 'none'}}
+            fill: backFill,
+            fillOpacity: 1,
+            fillRule: 'nonzero',
+            stroke: 'none'
+          }}
           width='512'
           x='0'
           y='0'
