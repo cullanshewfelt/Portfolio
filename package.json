@@ -7,9 +7,10 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server --hot & nodemon --max-old-space-size=4096 server.js",
     "server": "nodemon server.js",
-    "build": "webpack -w",
+    "build": "react-scripts build",
     "live-server": "live-server public/",
-    "dev-server": "webpack-dev-server --hot"
+    "dev-server": "webpack-dev-server --hot",
+    "heroku-postbuild": "npm run build"
   },
   "author": "",
   "license": "ISC",
@@ -41,6 +42,7 @@
     "react-redux": "^7.0.3",
     "react-router": "^5.0.0",
     "react-router-dom": "^5.0.0",
+    "react-scripts": "^3.0.1",
     "react-slick": "^0.24.0",
     "redux": "^4.0.1",
     "redux-thunk": "^2.3.0",
@@ -50,8 +52,7 @@
     "svg-react-loader": "^0.4.6",
     "tar": "^4.4.8",
     "url-loader": "^1.1.2",
-    "validator": "^10.11.0",
-    "webpack-dev-server": "^3.3.1"
+    "validator": "^10.11.0"
   },
   "devDependencies": {
     "@babel/helpers": "^7.4.4",
@@ -63,7 +64,6 @@
     "react-inlinesvg": "^0.8.4",
     "redux-devtools": "^3.5.0",
     "svg-inline-loader": "^0.8.0",
-    "webpack": "^4.31.0",
     "webpack-cli": "^3.3.2"
   }
 }
