@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { connect } from 'react-redux';
 import { NavLink } from 'react-router-dom';
 import { withRouter } from 'react-router';
-import SVG from 'react-inlinesvg';
+// import SVG from 'react-inlinesvg';
 
 import EmailSVG from '../../Icons/EmailSVG';
 import GitHubSVG from '../../Icons/GitHubSVG';

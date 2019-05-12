@@ -29,11 +29,18 @@ module.exports = (env) => {
         loader: 'url-loader?limit=8192'
       },
       {
-        test: /\.(svg|woff|woff2|eot|ttf|otf|gif)$/,
+        test: /\.(woff|woff2|eot|ttf|otf|gif)$/,
         use: [
           'file-loader'
         ]
-      }]
+      }
+      // ,{
+      //   test: /\.svg$/,
+      //   use: [
+      //     'svg-inline-loader'
+      //   ]
+      // }
+    ]
     },
     devtool: isProduction ? 'source-map' : 'cheap-module-source-map',
     devServer: {
@@ -42,6 +49,13 @@ module.exports = (env) => {
     },
     resolve: {
       modules: [path.resolve(__dirname, "app"), "node_modules"]
-    }
-  };
+    },
+    // "assets": [
+    //     "assets",
+    //     "favicon.ico",
+    //     "./src/assets/svgs/eth-100.svg",
+    //     "./src/assets/svgs/eth-1000.svg",
+    //     ...etc...
+    //   ],
+  }
 }
