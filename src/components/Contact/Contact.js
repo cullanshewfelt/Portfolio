@@ -1,4 +1,5 @@
 import React, {Component, useState} from 'react';
+import ReactDOM from 'react-dom'
 import EmailSVG from '../Icons/EmailSVG';
 import GitHubSVG from '../Icons/GitHubSVG';
 import LinkedInSVG from '../Icons/LinkedInSVG';

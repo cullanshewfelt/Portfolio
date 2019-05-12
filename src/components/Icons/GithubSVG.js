@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactDOM from 'react-dom'
 
 const GitHubSVG = (props) => {
   const { backFill, className, mainFill } = props.props;
