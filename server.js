@@ -4,6 +4,7 @@ const path = require('path');
 const cors = require('cors');
 const app = express();
 const util = require('util');
+const port = process.env.PORT || 3000;
 
 
 util.inspect.defaultOptions.maxArrayLength = null;
@@ -21,8 +22,8 @@ app.get('*', (req, res) => {
 // ********************************************************************************************************************************
 
 
-app.listen(3000, () => {
-  console.log('listening on port 3000');
+app.listen(port, () => {
+  console.log('Server is up!');
 })
 
 
