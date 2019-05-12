@@ -11,14 +11,7 @@ const GitHubSVG = (props) => {
       version='1.1'
       viewBox='0 0 512 512'
       width='512'
-      xmlSpace='preserve'
-      xmlns='http://www.w3.org/2000/svg'
-      xmlnscc='http://creativecommons.org/ns#'
-      xmlnsdc='http://purl.org/dc/elements/1.1/'
-      xmlnsinkscape='http://www.inkscape.org/namespaces/inkscape'
-      xmlnsrdf='http://www.w3.org/1999/02/22-rdf-syntax-ns#'
-      xmlnssodipodi='http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd'
-      xmlnssvg='http://www.w3.org/2000/svg'
+      
     >
       <defs id='defs12'/>
       <g id='g4680'>
