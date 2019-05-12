@@ -1,6 +1,6 @@
 import React, {Component, useState} from 'react';
 import EmailSVG from '../Icons/EmailSVG';
-// import GitHubSVG from '../Icons/GitHubSVG';
+import GitHubSVG from '../Icons/GitHubSVG';
 import LinkedInSVG from '../Icons/LinkedInSVG';
 
 
@@ -71,10 +71,10 @@ const Contact = () => {
                 onMouseEnter={() => {setHover('github-icon') & handleChange()}}
                 onMouseLeave={() => {setHover('') & handleChange()}}
               >
-                {/* <GitHubSVG props={isHovered === 'github-icon'
+                <GitHubSVG props={isHovered === 'github-icon'
                   ? {className:'github-icon social-icon', mainFill, backFill}
                   : {className:'github-icon social-icon', mainFill: defaultMainFill, backFill: defaultBackFill}}
-                /> */}
+                />
               </a>
             </div>
           </article>
