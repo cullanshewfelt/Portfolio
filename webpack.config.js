@@ -25,15 +25,11 @@ module.exports = (env) => {
         ]
       },
       {
-        test: /\.svg$/,
-        loader: 'svg-inline-loader'
-      },
-      {
         test: /\.(png|jpg|svg)$/,
         loader: 'url-loader?limit=8192'
       },
       {
-        test: /\.(woff|woff2|eot|ttf|otf|gif)$/,
+        test: /\.(svg|woff|woff2|eot|ttf|otf|gif)$/,
         use: [
           'file-loader'
         ]
