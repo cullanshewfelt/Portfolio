@@ -25,7 +25,7 @@ module.exports = (env) => {
         ]
       },
       {
-        test: /\.(png|jpg)$/,
+        test: /\.(png|jpg|svg)$/,
         loader: 'url-loader?limit=10000'
       },
       {

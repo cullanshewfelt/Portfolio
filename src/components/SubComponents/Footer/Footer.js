@@ -3,6 +3,8 @@ import { connect } from 'react-redux';
 import { NavLink } from 'react-router-dom';
 import { withRouter } from 'react-router';
 import ReactDOM from 'react-dom'
+const path = require('path');
+const source = path.resolve(__dirname, 'src');
 // import SVG from 'react-inlinesvg';
 
 import EmailSVG from '../../Icons/EmailSVG';
