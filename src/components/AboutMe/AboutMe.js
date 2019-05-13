@@ -1,7 +1,4 @@
 import React, {Component, lazy, Suspense} from 'react';
-import {connect} from 'react-redux';
-
-import {initializeData} from '../../actions/dataActions';
 
 const AboutMe = () => {
   document.title = 'Cullan Shewfelt | Web Developer';
@@ -107,4 +104,4 @@ const AboutMe = () => {
     )
   }
 
-export default connect()(AboutMe);
+export default AboutMe;

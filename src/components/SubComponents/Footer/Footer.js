@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { connect } from 'react-redux';
 import { NavLink } from 'react-router-dom';
 import { withRouter } from 'react-router';
 import ReactDOM from 'react-dom'
@@ -66,4 +65,4 @@ const Footer = () => {
   )
 }
 
-export default withRouter(connect()(Footer));
+export default withRouter(Footer);
