@@ -1,14 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom'
 
-const GitHubSVG = (props) => {
+const SVGtest = (props) => {
   const { backFill, className, mainFill } = props.props;
   return(
     <div>Test</div>
   )
 }
 
-export default GitHubSVG;
+export default SVGtest;
 
 {/* <svg
   className={className}
