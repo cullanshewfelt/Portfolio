@@ -1,5 +1,4 @@
 import React, {Component, useState} from 'react';
-import {connect} from 'react-redux';
 
 import ReactDOM from 'react-dom';
 import ReactModal from 'react-modal';
