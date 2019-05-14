@@ -33,7 +33,7 @@ const Portfolio = () => {
 
   const dlmusicRework = {
     description: 'This is my attempt ro redesign the DL Music website but in React. \
-                  My goal was create an application using React and Redux to limit the overall nu mber of server requests, in favor of a longer initial loading time. \
+                  My goal was create an application using React and Redux to limit the overall number of server requests, in favor of a longer initial loading time. \
                   I knew this had to be built using the existing SQL databases and data structures so both websites could be operational simultaneously.',
     github: 'https://github.com/cullanshewfelt/Metadata-Tagging-With-Redux',
     images: [DLMusicLibrary, DLMusicHomepage],

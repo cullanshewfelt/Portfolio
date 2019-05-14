@@ -1,7 +1,7 @@
 {
   "name": "cullan-shewfelt-portfolio",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.0.1",
+  "description": "Portfolio for Cullan Shewfelt",
   "engines": {
     "node": "12.1.0"
   },
@@ -16,7 +16,7 @@
     "dev-server": "webpack-dev-server --hot & nodemon --max-old-space-size=4096 server.js",
     "heroku-postbuild": "npm run build:prod"
   },
-  "author": "",
+  "author": "Cullan Shewfelt",
   "license": "ISC",
   "dependencies": {
     "@babel/core": "^7.4.4",
