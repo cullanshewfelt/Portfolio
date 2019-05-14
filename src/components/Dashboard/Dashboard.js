@@ -1,8 +1,5 @@
 import React, {Component, lazy, Suspense} from 'react';
-import {connect} from 'react-redux';
 import ReactModal from 'react-modal';
-
-import {initializeData} from '../../actions/dataActions';
 
 const Dashboard = () => {
   document.title = 'Cullan Shewfelt | Web Developer';
@@ -15,4 +12,4 @@ const Dashboard = () => {
     )
   }
 
-export default connect()(Dashboard);
+export default Dashboard;

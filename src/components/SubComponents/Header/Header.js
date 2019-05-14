@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
-import { connect } from 'react-redux';
 import {NavLink} from 'react-router-dom';
-import {initializeData} from '../../../actions/dataActions';
 
 class Header extends React.Component {
   constructor(props) {
@@ -174,5 +172,5 @@ class Header extends React.Component {
   )}
 }
 
-export default connect()(Header);
+export default Header;
 // °

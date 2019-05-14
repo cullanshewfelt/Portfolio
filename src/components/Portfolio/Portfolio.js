@@ -1,5 +1,4 @@
 import React, {Component, useState} from 'react';
-import {connect} from 'react-redux';
 import Modal from '../Modal/Modal';
 import ReactDOM from 'react-dom';
 
@@ -150,4 +149,4 @@ const Portfolio = () => {
   )
 }
 
-export default connect()(Portfolio);
+export default Portfolio;

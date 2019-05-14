@@ -34,12 +34,6 @@ module.exports = (env) => {
           'file-loader'
         ]
       }
-      // ,{
-      //   test: /\.svg$/,
-      //   use: [
-      //     'svg-inline-loader'
-      //   ]
-      // }
     ]
     },
     devtool: isProduction ? 'source-map' : 'cheap-module-source-map',
@@ -49,13 +43,6 @@ module.exports = (env) => {
     },
     resolve: {
       modules: [path.resolve(__dirname, "app"), "node_modules"]
-    },
-    // "assets": [
-    //     "assets",
-    //     "favicon.ico",
-    //     "./src/assets/svgs/eth-100.svg",
-    //     "./src/assets/svgs/eth-1000.svg",
-    //     ...etc...
-    //   ],
+    }
   }
 }
