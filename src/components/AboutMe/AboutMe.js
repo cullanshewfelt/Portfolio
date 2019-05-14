@@ -1,7 +1,7 @@
 import React, {Component, lazy, Suspense} from 'react';
 
 const AboutMe = () => {
-  document.title = 'Cullan Shewfelt | Web Developer';
+  document.title = 'Cullan Shewfelt | Home';
     return (
         <div className='columns has-navbar-fixed-top'>
           <div className='column'></div>

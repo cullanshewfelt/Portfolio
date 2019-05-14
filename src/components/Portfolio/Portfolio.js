@@ -145,7 +145,6 @@ const Portfolio = () => {
         <div className='column'></div>
       </div>
     </div>
-
   )
 }
 
