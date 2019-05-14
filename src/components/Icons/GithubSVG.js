@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom'
 
-const GitHubSVG = (props) => {
+const GithubSVG = (props) => {
   const { backFill, className, mainFill } = props.props;
   return(
     <svg
@@ -37,4 +37,4 @@ const GitHubSVG = (props) => {
   )
 }
 
-export default GitHubSVG;
+export default GithubSVG;

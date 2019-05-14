@@ -8,7 +8,7 @@ const source = path.resolve(__dirname, 'src');
 // import SVG from 'react-inlinesvg';
 
 import EmailSVG from '../../Icons/EmailSVG';
-import GitHubSVG from '../../Icons/GitHubSVG';
+import GithubSVG from '../../Icons/GithubSVG';
 import LinkedInSVG from '../../Icons/LinkedInSVG';
 
 // color reference:
@@ -49,7 +49,7 @@ const Footer = () => {
             onMouseEnter={() => {setHover('github-icon-footer') & handleChange()}}
             onMouseLeave={() => {setHover('') & handleChange()}}
           >
-            <GitHubSVG props={isHovered === 'github-icon-footer'
+            <GithubSVG props={isHovered === 'github-icon-footer'
               ? {className:'github-icon-footer social-icon', mainFill, backFill}
               : {className:'github-icon-footer social-icon', mainFill: defaultMainFill, backFill: defaultBackFill}}/>
           </a>
