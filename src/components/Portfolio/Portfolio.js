@@ -11,7 +11,7 @@ import CapitolHillSenatorDetails from './images/screenshots/Capitol_Hill_Senator
 import CapitolHillSenatorVotes from './images/screenshots/Capitol_Hill_Senator_Votes.png';
 
 import DLMusicHomepage from './images/screenshots/DL_Music_Homepage_1.png';
-import DLMusicLibrary from './images/screenshots/DL_Search_1.png';
+import DLMusicLibrary from './images/screenshots/DL_Search.png';
 import MetadataMain from './images/screenshots/Metadata_Main.png';
 import MetadataKeyword from './images/screenshots/Metadata_Keyword_Search.png';
 import MetadataModalInstruments from './images/screenshots/Metadata_Modal_Instruments.png';
