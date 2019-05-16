@@ -70,7 +70,7 @@ const Modal = (props) => {
             <ModalDescription/>
           </Slider>
         </div>
-        <div style={{textAlign: 'center'}}>Scroll Through The Images To Get Details Of This Project</div>
+        <div style={{textAlign: 'center'}}>Project Description & Specs Are On The Last Slide</div>
 
       </ReactModal>
     </div>
