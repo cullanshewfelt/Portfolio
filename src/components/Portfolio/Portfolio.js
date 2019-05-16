@@ -6,6 +6,10 @@ import DLMusicHomepage from './images/screenshots/DL_Music_Homepage_1.png';
 import DLMusicLibrary from './images/screenshots/DL_Search_1.png';
 import MLBAnalysisMain from './images/screenshots/MLB_Analysis_Main.png';
 import MLBAnalysisRoster from './images/screenshots/MLB_Analysis_Roster.png';
+import MetadataMain from './images/screenshots/Metadata_Main.png';
+import MetadataKeyword from './images/screenshots/Metadata_Keyword_Search.png';
+import MetadataModalInstruments from './images/screenshots/Metadata_Modal_Instruments.png';
+
 
 
 const Portfolio = () => {
@@ -36,7 +40,7 @@ const Portfolio = () => {
                   My goal was create an application using React and Redux to limit the overall number of server requests, in favor of a longer initial loading time. \
                   I knew this had to be built using the existing SQL databases and data structures so both websites could be operational simultaneously.',
     github: 'https://github.com/cullanshewfelt/Metadata-Tagging-With-Redux',
-    images: [DLMusicLibrary, DLMusicHomepage],
+    images: [MetadataMain, MetadataKeyword, MetadataModalInstruments],
     link: '',
     title: 'DL Music (Reworked In React)'
   }
