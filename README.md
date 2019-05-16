@@ -2,7 +2,7 @@
 
 A perpetual work in progress.
 
-This is the code for [my personal portfolio](https://github.com/cullanshewfelt).
+This is the code for [my personal portfolio](https://www.cullan-shewfelt.herokuapp.com).
 
 ## Table of Contents
 
