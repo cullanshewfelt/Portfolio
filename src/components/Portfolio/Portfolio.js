@@ -2,13 +2,15 @@ import React, {Component, useState} from 'react';
 import Modal from '../Modal/Modal';
 import ReactDOM from 'react-dom';
 
+
 import DLMusicHomepage from './images/screenshots/DL_Music_Homepage_1.png';
 import DLMusicLibrary from './images/screenshots/DL_Search_1.png';
-import MLBAnalysisMain from './images/screenshots/MLB_Analysis_Main.png';
-import MLBAnalysisRoster from './images/screenshots/MLB_Analysis_Roster.png';
 import MetadataMain from './images/screenshots/Metadata_Main.png';
 import MetadataKeyword from './images/screenshots/Metadata_Keyword_Search.png';
 import MetadataModalInstruments from './images/screenshots/Metadata_Modal_Instruments.png';
+import MLBAnalysisMain from './images/screenshots/MLB_Analysis_Main.png';
+import MLBAnalysisRoster from './images/screenshots/MLB_Analysis_Roster.png';
+
 
 
 
