@@ -2,6 +2,13 @@ import React, {Component, useState} from 'react';
 import Modal from '../Modal/Modal';
 import ReactDOM from 'react-dom';
 
+import CapitolHillCongressmanDetails from './images/screenshots/Capitol_Hill_Congressman_Details.png';
+import CapitolHillCongressmanVotes from './images/screenshots/Capitol_Hill_Congressman_Votes.png';
+import CapitolHillMain from './images/screenshots/Capitol_Hill_Main.png';
+import CapitolHillMap from './images/screenshots/Capitol_Hill_Map.png';
+import CapitolHillMapDetail from './images/screenshots/Capitol_Hill_Map_Detail.png';
+import CapitolHillSenatorDetails from './images/screenshots/Capitol_Hill_Senator_Details.png';
+import CapitolHillSenatorVotes from './images/screenshots/Capitol_Hill_Senator_Votes.png';
 
 import DLMusicHomepage from './images/screenshots/DL_Music_Homepage_1.png';
 import DLMusicLibrary from './images/screenshots/DL_Search_1.png';
@@ -11,9 +18,6 @@ import MetadataModalInstruments from './images/screenshots/Metadata_Modal_Instru
 import MLBAnalysisMain from './images/screenshots/MLB_Analysis_Main.png';
 import MLBAnalysisRoster from './images/screenshots/MLB_Analysis_Roster.png';
 
-
-
-
 const Portfolio = () => {
   document.title = 'Cullan Shewfelt | Portfolio';
   const [isModalOpen, setModal] = useState(false);
@@ -22,6 +26,14 @@ const Portfolio = () => {
   const handleModal = (project) => {
     !isModalOpen && setProject(project);
     setModal(!isModalOpen);
+  }
+
+  const capitolHill = {
+    description: '',
+    github: 'https://github.com/Capitol-Hill/Capitol-Hill',
+    images: [CapitolHillMain, CapitolHillSenatorDetails, CapitolHillMap, CapitolHillMapDetail, CapitolHillCongressmanVotes],
+    link: 'https://capitol-hill.herokuapp.com/',
+    title: 'Capitol Hill'
   }
 
   const dlmusic = {
@@ -57,6 +69,7 @@ const Portfolio = () => {
     link: '',
     title: 'MLB Analysis'
   }
+
 
 
   return (
@@ -97,14 +110,14 @@ const Portfolio = () => {
               <div className='tile is-parent'>
                 <article
                   className='tile is-child notification is-primary portfolio-project'
-                  onClick={() => {handleModal(mlbAnalysis)}}
+                  onClick={() => {handleModal(capitolHill)}}
                 >
                   <div className='content'>
-                    <h4 className='title has-text-centered'>{mlbAnalysis.title}</h4>
+                    <h4 className='title has-text-centered'>{capitolHill.title}</h4>
                     <hr/>
                     <img
                       alt='DL Music Homepage'
-                      src={mlbAnalysis.images[0]}
+                      src={capitolHill.images[0]}
                       title='Click To View Details'
                     />
                   </div>
@@ -129,12 +142,20 @@ const Portfolio = () => {
                 </article>
               </div>
               <div className='tile is-parent'>
-                <article className='tile is-child notification is-primary'>
-                  <div className='content'>
-                    <h4 className='title has-text-centered'>Skills, Tools & Experience</h4>
-                    <hr/>
-                  </div>
-                </article>
+              <article
+                className='tile is-child notification is-primary portfolio-project'
+                onClick={() => {handleModal(mlbAnalysis)}}
+              >
+                <div className='content'>
+                  <h4 className='title has-text-centered'>{mlbAnalysis.title}</h4>
+                  <hr/>
+                  <img
+                    alt='DL Music Homepage'
+                    src={mlbAnalysis.images[0]}
+                    title='Click To View Details'
+                  />
+                </div>
+              </article>
               </div>
               <div className='tile is-parent'>
                 <article className='tile is-child notification is-primary has-text-centered'>

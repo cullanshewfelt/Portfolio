@@ -34,11 +34,12 @@ const Modal = (props) => {
           <br/>
         </li>
       ))}
-      {selectedProject.github &&
-        <strong><u><a target='blank' href={selectedProject.github}>View Code On Github</a></u></strong>
-      }
       {selectedProject.link &&
         <strong><u><a target='blank' href={selectedProject.link}>View Website</a></u></strong>
+      }
+      <br/>
+      {selectedProject.github &&
+        <strong><u><a target='blank' href={selectedProject.github}>View Code On Github</a></u></strong>
       }
     </div>
   )
