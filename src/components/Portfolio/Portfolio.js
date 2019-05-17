@@ -59,7 +59,7 @@ const Portfolio = () => {
                   I knew this had to be built using the existing SQL databases and data structures so both websites could be operational simultaneously.',
     github: 'https://github.com/cullanshewfelt/Metadata-Tagging-With-Redux',
     images: [MetadataMain, MetadataKeyword, MetadataModalInstruments],
-    link: '',
+    link: 'https://react-metadata-beta.herokuapp.com/',
     title: 'DL Music (Reworked In React)'
   }
 
