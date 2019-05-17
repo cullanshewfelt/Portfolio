@@ -32,14 +32,29 @@ const AboutMe = () => {
                 <div className='tile is-parent'>
                   <article className='tile is-child notification is-primary'>
                     <div className='content justified-content'>
-                      <h4 className='title has-text-centered'>Continued...</h4>
+                      <h4 className='title has-text-centered'>Hobbies</h4>
                       <hr/>
-                      <p className='subtitle'>Bottom Tile</p>
+                      In addition to developing, I like to play composer music.
+                      I also do all things audio related: mixing, editing, sound design, recording etc.
                     </div>
                   </article>
                 </div>
               </div>
               <div className='tile is-vertical is-6'>
+                <div className='tile is-parent'>
+                  <article className='tile is-child notification is-primary'>
+                    <div className='content justified-content'>
+                      <h4 className='title has-text-centered'>Education</h4>
+                      <hr/>
+                      <div className='columns is-mobile is-gapless'>
+                        I was certified upon completing UCLA's Coding Bootcamp.
+                        I have a Bachelor of Arts in Recording Arts Technology
+                        with a minor in English / Creative Writing from Loyola Marymount University, where I graduated
+                        with Cum Luade Honors and made the Dean's List.
+                      </div>
+                    </div>
+                  </article>
+                </div>
                 <div className='tile is-parent'>
                   <article className='tile is-child notification is-primary'>
                     <div className='content'>
@@ -53,7 +68,6 @@ const AboutMe = () => {
                             <li>SQL / MySQL</li>
                             <li>Express</li>
                             <li>HTML5</li>
-                            <li>PHP</li>
                           </ul>
                         </div>
                         <div className='column'>
@@ -61,10 +75,8 @@ const AboutMe = () => {
                             <li>node.js</li>
                             <li>Redux</li>
                             <li>MongoDB</li>
-                            <li>jQuery</li>
                             <li>SASS</li>
                             <li>CSS3</li>
-                            <li>Python</li>
                           </ul>
                         </div>
                       </div>
@@ -81,19 +93,19 @@ const AboutMe = () => {
                           <ul>
                             <li>Git / Github</li>
                             <li>RESTful APIs</li>
-                            <li>CLI Apps</li>
-                            <li>Bash Scripts</li>
+                            {/* <li>CLI Apps</li> */}
                           </ul>
                         </div>
                         <div className='column'>
                           <ul>
                             <li>Mac OSX</li>
                             <li>Windows</li>
+                            {/* <li>Bash Scripts</li> */}
                             {/* <li>Kali Linux</li> */}
                             {/* <li>Apple Scripts</li> */}
                           </ul>
                         </div>
-                    </div>
+                      </div>
                     </div>
                   </article>
                 </div>
