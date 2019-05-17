@@ -26,7 +26,6 @@ const Modal = (props) => {
 
   const ModalDescription = () => (
     <div className='project-description'>
-      <br/>
       {selectedProject.description.split('. ').map((desc, x) => (
         <li key={x}>
           {desc.trim()}
@@ -60,6 +59,8 @@ const Modal = (props) => {
         </button>
         <h3 className='title modal-title' style={{textAlign: 'center'}}>{selectedProject.title}</h3>
         <hr className='modal-break'/>
+        <br/>
+        <br/>
         <div className='slider-container'>
           <Slider {...settings}>
             {selectedProject.images && selectedProject.images.map((image, x) => (
@@ -70,7 +71,7 @@ const Modal = (props) => {
             <ModalDescription/>
           </Slider>
         </div>
-        <div style={{textAlign: 'center'}}>Scroll Through The Images To Get Details Of This Project</div>
+        <div style={{textAlign: 'center'}}>Details Of My Contributions Are On The Last Slide</div>
 
       </ReactModal>
     </div>

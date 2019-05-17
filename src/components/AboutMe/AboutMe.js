@@ -10,27 +10,28 @@ const AboutMe = () => {
               <div className='tile is-vertical is-6'>
                 <div className='tile is-parent is-vertical'>
                   <article className='tile is-child notification is-primary'>
-                    <div className='content'>
+                    <div className='content justified-content'>
                       <h4 className='title has-text-centered'>About Me</h4>
                       <hr/>
                       My name is <strong>Cullan Shewfelt</strong> and
-                      I am a Web Developer native to Los Angeles. I code both Front-End and Back-End, although I prefer
-                      problem solving, and creating the logic and data structures that gives life to web-based applications.
+                      I am a Web Developer native to Los Angeles. I code both Front-End and Back-End, although I prefer working on
+                      the user experience over the user interface; I enjoy problem solving, and find gratification in creating
+                      the logic and data structures that breathes life to web-based applications.
                     </div>
                   </article>
                   <article className='tile is-child notification is-primary'>
-                    <div className='content'>
+                    <div className='content justified-content'>
                       <h4 className='title has-text-centered'>Goals</h4>
                       <hr/>
-                      My philosophy on web development is simple: keep up to date with current and in-demand languages, frameworks, libraries,
-                      and ECMAScript syntax standards. I strive to learn more, and for my knowledge and skills to be valued not only now, but for
-                      years to come.
+                      My philosophy on web development is simple: keep up with current and in-demand languages, frameworks, and libraries.
+                      Strive to learn more.
+                      Be a value to my team when I can.
                     </div>
                   </article>
                 </div>
                 <div className='tile is-parent'>
                   <article className='tile is-child notification is-primary'>
-                    <div className='content'>
+                    <div className='content justified-content'>
                       <h4 className='title has-text-centered'>Continued...</h4>
                       <hr/>
                       <p className='subtitle'>Bottom Tile</p>

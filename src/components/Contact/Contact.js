@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom'
 import EmailSVG from '../Icons/EmailSVG';
 import GithubSVG from '../Icons/GithubSVG';
 import LinkedInSVG from '../Icons/LinkedInSVG';
-
+import SoundcloudSVG from '../Icons/SoundcloudSVG';
 
 const Contact = () => {
   document.title = 'Cullan Shewfelt | Contact';
@@ -43,14 +43,14 @@ const Contact = () => {
               <br/>
               <a
                 target='_blank'
-                href='mailto:cullanrocks@gmail.com'
-                title='Email Me'
-                onMouseEnter={() => {setHover('email-icon') & handleChange()}}
+                href='https://github.com/cullanshewfelt'
+                title='Github Profile'
+                onMouseEnter={() => {setHover('github-icon') & handleChange()}}
                 onMouseLeave={() => {setHover('') & handleChange()}}
               >
-                <EmailSVG props={isHovered === 'email-icon'
-                  ? {className:'email-icon social-icon', mainFill, backFill}
-                  : {className:'email-icon social-icon', mainFill: defaultMainFill, backFill: defaultBackFill}}
+                <GithubSVG props={isHovered === 'github-icon'
+                  ? {className:'github-icon social-icon', mainFill, backFill}
+                  : {className:'github-icon social-icon', mainFill: defaultMainFill, backFill: defaultBackFill}}
                 />
               </a>
               <a
@@ -67,14 +67,26 @@ const Contact = () => {
               </a>
               <a
                 target='_blank'
-                href='https://github.com/cullanshewfelt'
-                title='Github Profile'
-                onMouseEnter={() => {setHover('github-icon') & handleChange()}}
+                href='mailto:cullanrocks@gmail.com'
+                title='Email Me'
+                onMouseEnter={() => {setHover('email-icon') & handleChange()}}
                 onMouseLeave={() => {setHover('') & handleChange()}}
               >
-                <GithubSVG props={isHovered === 'github-icon'
-                  ? {className:'github-icon social-icon', mainFill, backFill}
-                  : {className:'github-icon social-icon', mainFill: defaultMainFill, backFill: defaultBackFill}}
+                <EmailSVG props={isHovered === 'email-icon'
+                  ? {className:'email-icon social-icon', mainFill, backFill}
+                  : {className:'email-icon social-icon', mainFill: defaultMainFill, backFill: defaultBackFill}}
+                />
+              </a>
+              <a
+                target='_blank'
+                href='https://www.soundcloud.com'
+                title='Soundcloud'
+                onMouseEnter={() => {setHover('soundcloud-icon') & handleChange()}}
+                onMouseLeave={() => {setHover('') & handleChange()}}
+              >
+                <SoundcloudSVG props={isHovered === 'soundcloud-icon'
+                  ? {className:'soundcloud-icon social-icon', mainFill, backFill}
+                  : {className:'soundcloud-icon social-icon', mainFill: defaultMainFill, backFill: defaultBackFill}}
                 />
               </a>
             </div>
