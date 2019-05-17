@@ -29,7 +29,11 @@ const Portfolio = () => {
   }
 
   const capitolHill = {
-    description: '',
+    description: 'Capitol Hill is an application designed to easily connect people with their Senators and Congressional representatives. \
+                  Users can search for their district\'s representatives, or state Senators, and shown that politician\'s legislative voting track record. \
+                  Users can also search by a map, which has each Congressional district, and can find their representatives through this method. \
+                  I conceptualized this app, delegating tasks to a team of five developers. \
+                  I did most of the heavy lifting for this application, including scraping API data, creating the data structures in MongoDB, and designing the entire map component using leaflet.js.',
     github: 'https://github.com/Capitol-Hill/Capitol-Hill',
     images: [CapitolHillMap, CapitolHillSenatorDetails, CapitolHillMapDetail, CapitolHillCongressmanVotes],
     link: 'https://capitol-hill.herokuapp.com/',
@@ -69,8 +73,6 @@ const Portfolio = () => {
     link: '',
     title: 'MLB Analysis'
   }
-
-
 
   return (
     <div>
