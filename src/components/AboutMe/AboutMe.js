@@ -34,7 +34,7 @@ const AboutMe = () => {
                     <div className='content justified-content'>
                       <h4 className='title has-text-centered'>Hobbies</h4>
                       <hr/>
-                      In addition to developing, I like to play composer music.
+                      In addition to developing, I like to compose music.
                       I also do all things audio related: mixing, editing, sound design, recording etc.
                     </div>
                   </article>

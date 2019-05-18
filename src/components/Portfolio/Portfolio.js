@@ -18,10 +18,28 @@ import MetadataModalInstruments from './images/screenshots/Metadata_Modal_Instru
 import MLBAnalysisMain from './images/screenshots/MLB_Analysis_Main.png';
 import MLBAnalysisRoster from './images/screenshots/MLB_Analysis_Roster.png';
 
+import EmailSVG from '../Icons/EmailSVG';
+import GithubSVG from '../Icons/GithubSVG';
+import LinkedInSVG from '../Icons/LinkedInSVG';
+import SoundcloudSVG from '../Icons/SoundcloudSVG';
+
 const Portfolio = () => {
   document.title = 'Cullan Shewfelt | Portfolio';
   const [isModalOpen, setModal] = useState(false);
   const [selectedProject, setProject] = useState({});
+
+  const defaultMainFill = '#000000';
+  const defaultBackFill= '#4dcce6';
+
+  const [isHovered, setHover] = useState('');
+  const [mainFill, setMain] = useState(defaultMainFill);
+  const [backFill, setBackground] = useState(defaultBackFill);
+
+  const handleChange = () => {
+    !!isHovered // switch main and back fills for hover effect
+      ? setMain(defaultMainFill) & setBackground(defaultBackFill)
+      : setMain(defaultBackFill) & setBackground(defaultMainFill)
+  }
 
   const handleModal = (project) => {
     !isModalOpen && setProject(project);
@@ -144,27 +162,72 @@ const Portfolio = () => {
                 </article>
               </div>
               <div className='tile is-parent'>
-              <article
-                className='tile is-child notification is-primary portfolio-project'
-                onClick={() => {handleModal(mlbAnalysis)}}
-              >
-                <div className='content'>
-                  <h4 className='title has-text-centered'>{mlbAnalysis.title}</h4>
-                  <hr/>
-                  <img
-                    alt='DL Music Homepage'
-                    src={mlbAnalysis.images[0]}
-                    title='Click To View Details'
-                  />
-                </div>
-              </article>
+                <article
+                  className='tile is-child notification is-primary portfolio-project'
+                  onClick={() => {handleModal(mlbAnalysis)}}
+                >
+                  <div className='content'>
+                    <h4 className='title has-text-centered'>{mlbAnalysis.title}</h4>
+                    <hr/>
+                    <img
+                      alt='DL Music Homepage'
+                      src={mlbAnalysis.images[0]}
+                      title='Click To View Details'
+                    />
+                  </div>
+                </article>
               </div>
-              <div className='tile is-parent'>
+              <div className='tile is-parent portfolio-contact-tile'>
                 <article className='tile is-child notification is-primary has-text-centered'>
                   <div className='content'>
-                    <h4 className='title'>Portfolio</h4>
+                    <h4 className='title has-text-centered'>Contact Me</h4>
                     <hr/>
-                    Click on an image to see details about that project.
+                    <a
+                      target='_blank'
+                      href='https://www.soundcloud.com'
+                      title='Soundcloud'
+                      onMouseEnter={() => {setHover('soundcloud-icon-portfolio') & handleChange()}}
+                      onMouseLeave={() => {setHover('') & handleChange()}}
+                    >
+                      <SoundcloudSVG props={isHovered === 'soundcloud-icon-portfolio'
+                        ? {className:'soundcloud-icon-portfolio social-icon', mainFill, backFill}
+                        : {className:'soundcloud-icon-portfolio social-icon', mainFill: defaultMainFill, backFill: defaultBackFill}}
+                      />
+                    </a>
+                    <a
+                      target='_blank'
+                      href='mailto:cullanrocks@gmail.com'
+                      title='Email Me'
+                      onMouseEnter={() => {setHover('email-icon-portfolio') & handleChange()}}
+                      onMouseLeave={() => {setHover('') & handleChange()}}
+                    >
+                      <EmailSVG props={isHovered === 'email-icon-portfolio'
+                        ? {className:'email-icon-portfolio social-icon', mainFill, backFill}
+                        : {className:'email-icon-portfolio social-icon', mainFill: defaultMainFill, backFill: defaultBackFill}}/>
+                    </a>
+                    <a
+                      target='_blank'
+                      href='https://www.linkedin.com/in/cullan-shewfelt'
+                      title='LinkedIn Profile'
+                      onMouseEnter={() => {setHover('linkedin-icon-portfolio') & handleChange()}}
+                      onMouseLeave={() => {setHover('') & handleChange()}}
+                    >
+                      <LinkedInSVG props={isHovered === 'linkedin-icon-portfolio'
+                        ? {className:'linkedin-icon-portfolio social-icon', mainFill, backFill}
+                        : {className:'linkedin-icon-portfolio social-icon', mainFill: defaultMainFill, backFill: defaultBackFill}}/>
+                    </a>
+                    <a
+                      target='_blank'
+                      href='https://github.com/cullanshewfelt'
+                      title='Github Profile'
+                      onMouseEnter={() => {setHover('github-icon-portfolio') & handleChange()}}
+                      onMouseLeave={() => {setHover('') & handleChange()}}
+                    >
+                      <GithubSVG props={isHovered === 'github-icon-portfolio'
+                        ? {className:'github-icon-portfolio social-icon', mainFill, backFill}
+                        : {className:'github-icon-portfolio social-icon', mainFill: defaultMainFill, backFill: defaultBackFill}}/>
+                    </a>
+                    <br/>
                   </div>
                 </article>
               </div>

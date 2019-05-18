@@ -74,7 +74,7 @@ const Footer = () => {
               : {className:'github-icon-footer social-icon', mainFill: defaultMainFill, backFill: defaultBackFill}}/>
           </a>
 
-       </div>
+        </div>
      </footer>
   )
 }
