@@ -47,10 +47,10 @@ const AboutMe = () => {
                       <h4 className='title has-text-centered'>Education</h4>
                       <hr/>
                       <div className='columns is-mobile is-gapless'>
-                        I was certified upon completing UCLA's Coding Bootcamp.
                         I have a Bachelor of Arts in Recording Arts Technology
                         with a minor in English / Creative Writing from Loyola Marymount University, where I graduated
                         with Cum Luade Honors and made the Dean's List.
+                        I have a certificate from UCLA's Coding Bootcamp.
                       </div>
                     </div>
                   </article>
