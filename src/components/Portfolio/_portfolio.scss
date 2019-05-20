@@ -41,8 +41,22 @@
   margin: 0px 2.5% 0px 2.5%;
   width: auto;
 }
+@media only screen and (max-width: 1088px) {
+  h4 {
+    font-size: 18px !important;
+  }
+}
+
+@media only screen and (max-width: 812px) {
+  h4 {
+    font-size: 16px !important;
+  }
+}
 
 @media only screen and (max-width: 788px) {
+  h4 {
+    font-size: 16px !important;
+  }
   .portfolio-contact-tile{
     visibility: visible;
   }
