@@ -51,6 +51,7 @@ const Modal = (props) => {
         contentLabel='Portfolio Detail'
         isOpen={isModalOpen}
         onRequestClose={closeModal}
+        shouldFocusAfterRender={false}
       >
         <button
           onClick={closeModal}

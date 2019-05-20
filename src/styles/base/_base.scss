@@ -15,3 +15,8 @@ hr{
   color: black;
   margin: .75rem 0;
 }
+
+.ReactModal__Body--open{
+  overflow: hidden;
+  position: fixed;
+}
