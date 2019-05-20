@@ -27,18 +27,20 @@ const Modal = (props) => {
   const ModalDescription = () => (
     <div className='project-description'>
       {selectedProject.description.split('. ').map((desc, x) => (
-        <li key={x}>
+        <li
+          className='justified-content'
+          key={x}>
           {desc.trim()}
           <br/>
           <br/>
         </li>
       ))}
-      {selectedProject.link &&
-        <strong><u><a target='blank' href={selectedProject.link}>View Website</a></u></strong>
-      }
       <br/>
+      {selectedProject.link &&
+        <strong><u><a target='blank' href={selectedProject.link} style={{float:'left'}}>View Website</a></u></strong>
+      }
       {selectedProject.github &&
-        <strong><u><a target='blank' href={selectedProject.github}>View Code On Github</a></u></strong>
+        <strong><u><a target='blank' href={selectedProject.github} style={{float:'right'}}>View Code On Github</a></u></strong>
       }
     </div>
   )

@@ -66,6 +66,10 @@ ul{
   list-style-type: circle;
 }
 
+.justified-content {
+  text-align: justify !important;
+  text-justify: auto !important;
+ }
 
 @media only screen and (max-width: 1440px) {
   .modal-title{
@@ -83,7 +87,7 @@ ul{
     margin-bottom: 0 !important;
   }
   .portfolio-detail-modal{
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 
@@ -121,7 +125,9 @@ ul{
 }
 
 @media only screen and (max-width: 600px) {
-
+  .portfolio-detail-modal {
+    font-size: 14px;
+  }
 }
 
 @media only screen and (max-width: 400px) {
