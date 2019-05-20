@@ -12,6 +12,7 @@ const Modal = (props) => {
   const closeModal = () => {
     isModalOpen && handleModal();
   }
+  // const disableScroll = () => { document.body.style.overflow = 'hidden; position: fixed; top: 0; right: 0; bottom: 0; left: 0;' }
 
   const settings = {
       // autoplay: true,
@@ -49,9 +50,12 @@ const Modal = (props) => {
   return (
     <div>
       <ReactModal
+
         className='portfolio-detail-modal'
         contentLabel='Portfolio Detail'
+        htmlOpenClassName='ReactModal__Html--open'
         isOpen={isModalOpen}
+        // onAfterOpen={disableScroll}
         onRequestClose={closeModal}
         shouldFocusAfterRender={false}
       >

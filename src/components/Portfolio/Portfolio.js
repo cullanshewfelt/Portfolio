@@ -1,6 +1,8 @@
 import React, {Component, useState} from 'react';
 import Modal from '../Modal/Modal';
 import ReactDOM from 'react-dom';
+const noScroll = require('no-scroll');
+
 
 import CapitolHillCongressmanDetails from './images/screenshots/Capitol_Hill_Congressman_Details.png';
 import CapitolHillCongressmanVotes from './images/screenshots/Capitol_Hill_Congressman_Votes.png';
@@ -43,6 +45,7 @@ const Portfolio = () => {
 
   const handleModal = (project) => {
     !isModalOpen && setProject(project);
+    isModalOpen ? noScroll.off() : noScroll.on();
     setModal(!isModalOpen);
   }
 
@@ -113,8 +116,10 @@ const Portfolio = () => {
                   </div>
                 </article>
                 <article
+                  href="javascript:void(0)"
                   className='tile is-child notification is-primary portfolio-project'
-                  onClick={() => {handleModal(dlmusicRework)}}
+                  onClick={(event) => {event.preventDefault() & handleModal(dlmusicRework)}}
+                  tabIndex='0'
                 >
                   <div className='content'>
                     <h4 className='title has-text-centered'>{dlmusicRework.title}</h4>
@@ -129,8 +134,10 @@ const Portfolio = () => {
               </div>
               <div className='tile is-parent'>
                 <article
+                  href="javascript:void(0)"
                   className='tile is-child notification is-primary portfolio-project'
-                  onClick={() => {handleModal(capitolHill)}}
+                  onClick={(event) => {event.preventDefault() & handleModal(capitolHill)}}
+                  tabIndex='0'
                 >
                   <div className='content'>
                     <h4 className='title has-text-centered'>{capitolHill.title}</h4>
@@ -147,8 +154,10 @@ const Portfolio = () => {
             <div className='tile is-vertical is-6'>
               <div className='tile is-parent'>
                 <article
+                  href="javascript:void(0)"
                   className='tile is-child notification is-primary portfolio-project'
-                  onClick={() => {handleModal(dlmusic)}}
+                  onClick={(event) => {event.preventDefault() & handleModal(dlmusic)}}
+                  tabIndex='0'
                 >
                   <div className='content'>
                     <h4 className='title has-text-centered'>{dlmusic.title}</h4>
@@ -163,8 +172,10 @@ const Portfolio = () => {
               </div>
               <div className='tile is-parent'>
                 <article
+                  href="javascript:void(0)"
                   className='tile is-child notification is-primary portfolio-project'
-                  onClick={() => {handleModal(mlbAnalysis)}}
+                  onClick={(event) => {event.preventDefault() & handleModal(mlbAnalysis)}}
+                  tabIndex='0'
                 >
                   <div className='content'>
                     <h4 className='title has-text-centered'>{mlbAnalysis.title}</h4>
