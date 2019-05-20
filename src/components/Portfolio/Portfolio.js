@@ -2,6 +2,7 @@ import React, {Component, useState} from 'react';
 import Modal from '../Modal/Modal';
 import ReactDOM from 'react-dom';
 const noScroll = require('no-scroll');
+import { disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
 
 
 import CapitolHillCongressmanDetails from './images/screenshots/Capitol_Hill_Congressman_Details.png';
@@ -45,7 +46,8 @@ const Portfolio = () => {
 
   const handleModal = (project) => {
     !isModalOpen && setProject(project);
-    isModalOpen ? noScroll.off() : noScroll.on();
+    // isModalOpen ? noScroll.off() : noScroll.on();
+    !isModalOpen ? disableBodyScroll(document.getElementsByClassName('#ReactModal__Body--open')) : clearAllBodyScrollLocks();
     setModal(!isModalOpen);
   }
 
