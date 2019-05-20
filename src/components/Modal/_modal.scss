@@ -94,7 +94,14 @@ ul{
 }
 
 @media only screen and (max-width: 812px) {
+  .modal-title{
+    font-size: 18px;
+  }
+  hr{
+    height: 1px;
+  }
   .portfolio-detail-modal {
+    font-size: 14px;
     height: 100%;
     width: 100%;
   }
@@ -109,12 +116,6 @@ ul{
 }
 
 @media only screen and (max-width: 788px) {
-  .modal-title{
-    font-size: 18px;
-  }
-  .portfolio-detail-modal {
-    font-size: 14px;
-  }
   .slider-container{
     max-width: 100%;
   }

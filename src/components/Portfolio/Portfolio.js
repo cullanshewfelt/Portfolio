@@ -195,26 +195,14 @@ const Portfolio = () => {
                     <hr/>
                     <a
                       target='_blank'
-                      href='https://www.soundcloud.com'
-                      title='Soundcloud'
-                      onMouseEnter={() => {setHover('soundcloud-icon-portfolio') & handleChange()}}
+                      href='https://github.com/cullanshewfelt'
+                      title='Github Profile'
+                      onMouseEnter={() => {setHover('github-icon-portfolio') & handleChange()}}
                       onMouseLeave={() => {setHover('') & handleChange()}}
                     >
-                      <SoundcloudSVG props={isHovered === 'soundcloud-icon-portfolio'
-                        ? {className:'soundcloud-icon-portfolio social-icon', mainFill, backFill}
-                        : {className:'soundcloud-icon-portfolio social-icon', mainFill: defaultMainFill, backFill: defaultBackFill}}
-                      />
-                    </a>
-                    <a
-                      target='_blank'
-                      href='mailto:cullanrocks@gmail.com'
-                      title='Email Me'
-                      onMouseEnter={() => {setHover('email-icon-portfolio') & handleChange()}}
-                      onMouseLeave={() => {setHover('') & handleChange()}}
-                    >
-                      <EmailSVG props={isHovered === 'email-icon-portfolio'
-                        ? {className:'email-icon-portfolio social-icon', mainFill, backFill}
-                        : {className:'email-icon-portfolio social-icon', mainFill: defaultMainFill, backFill: defaultBackFill}}/>
+                      <GithubSVG props={isHovered === 'github-icon-portfolio'
+                        ? {className:'github-icon-portfolio social-icon', mainFill, backFill}
+                        : {className:'github-icon-portfolio social-icon', mainFill: defaultMainFill, backFill: defaultBackFill}}/>
                     </a>
                     <a
                       target='_blank'
@@ -229,14 +217,26 @@ const Portfolio = () => {
                     </a>
                     <a
                       target='_blank'
-                      href='https://github.com/cullanshewfelt'
-                      title='Github Profile'
-                      onMouseEnter={() => {setHover('github-icon-portfolio') & handleChange()}}
+                      href='mailto:cullanrocks@gmail.com'
+                      title='Email Me'
+                      onMouseEnter={() => {setHover('email-icon-portfolio') & handleChange()}}
                       onMouseLeave={() => {setHover('') & handleChange()}}
                     >
-                      <GithubSVG props={isHovered === 'github-icon-portfolio'
-                        ? {className:'github-icon-portfolio social-icon', mainFill, backFill}
-                        : {className:'github-icon-portfolio social-icon', mainFill: defaultMainFill, backFill: defaultBackFill}}/>
+                      <EmailSVG props={isHovered === 'email-icon-portfolio'
+                        ? {className:'email-icon-portfolio social-icon', mainFill, backFill}
+                        : {className:'email-icon-portfolio social-icon', mainFill: defaultMainFill, backFill: defaultBackFill}}/>
+                    </a>
+                    <a
+                      target='_blank'
+                      href='https://www.soundcloud.com'
+                      title='Soundcloud'
+                      onMouseEnter={() => {setHover('soundcloud-icon-portfolio') & handleChange()}}
+                      onMouseLeave={() => {setHover('') & handleChange()}}
+                    >
+                      <SoundcloudSVG props={isHovered === 'soundcloud-icon-portfolio'
+                        ? {className:'soundcloud-icon-portfolio social-icon', mainFill, backFill}
+                        : {className:'soundcloud-icon-portfolio social-icon', mainFill: defaultMainFill, backFill: defaultBackFill}}
+                      />
                     </a>
                     <br/>
                   </div>
