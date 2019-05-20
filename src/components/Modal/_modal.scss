@@ -24,6 +24,7 @@
 
 button{
   cursor: pointer;
+  margin-right:0;
 }
 
 .portfolio-detail-modal {
@@ -43,6 +44,8 @@ button{
 .modal-title{
   font-size: 24px;
   color: black;
+  text-align: center;
+  margin-left: 1.6rem;
 }
 
 .title:not(:last-child){

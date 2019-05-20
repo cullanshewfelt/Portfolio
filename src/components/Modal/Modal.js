@@ -64,9 +64,12 @@ const Modal = (props) => {
           style={{float: 'right'}}
         >X
         </button>
-        <h3 className='title modal-title' style={{textAlign: 'center'}}>{selectedProject.title}</h3>
+        <h3 className='title modal-title'>{selectedProject.title}</h3>
         <hr className='modal-break'/>
         <br/>
+        {/* <div className='mobile-modal-spacing'>
+          <br/>
+        </div> */}
         <div className='slider-container'>
           <Slider {...settings}>
             {selectedProject.images && selectedProject.images.map((image, x) => (
@@ -78,7 +81,6 @@ const Modal = (props) => {
           </Slider>
         </div>
         <div style={{textAlign: 'center'}}>Details Of My Contributions Are On The Last Slide</div>
-
       </ReactModal>
     </div>
   )
