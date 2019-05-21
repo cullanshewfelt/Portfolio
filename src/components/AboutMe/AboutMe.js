@@ -1,7 +1,27 @@
-import React, {Component, lazy, Suspense} from 'react';
+import React, {Component, useState} from 'react';
+import EmailSVG from '../Icons/EmailSVG';
+import GithubSVG from '../Icons/GithubSVG';
+import LinkedInSVG from '../Icons/LinkedInSVG';
+import SoundcloudSVG from '../Icons/SoundcloudSVG';
+
 
 const AboutMe = () => {
   document.title = 'Cullan Shewfelt | Home';
+  const [isModalOpen, setModal] = useState(false);
+  const [selectedProject, setProject] = useState({});
+
+  const defaultMainFill = '#000000';
+  const defaultBackFill= '#4dcce6';
+
+  const [isHovered, setHover] = useState('');
+  const [mainFill, setMain] = useState(defaultMainFill);
+  const [backFill, setBackground] = useState(defaultBackFill);
+
+  const handleChange = () => {
+    !!isHovered // switch main and back fills for hover effect
+      ? setMain(defaultMainFill) & setBackground(defaultBackFill)
+      : setMain(defaultBackFill) & setBackground(defaultMainFill)
+  }
     return (
         <div className='columns has-navbar-fixed-top'>
           <div className='column'></div>
@@ -108,6 +128,58 @@ const AboutMe = () => {
                       </div>
                     </div>
                   </article>
+                  {/* <article className='tile is-child notification is-primary has-text-centered'>
+                    <div className='content'>
+                      <h4 className='title has-text-centered'>Contact Me</h4>
+                      <hr/>
+                      <a
+                    target='_blank'
+                    href='https://github.com/cullanshewfelt'
+                    title='Github Profile'
+                    onMouseEnter={() => {setHover('github-icon-portfolio') & handleChange()}}
+                    onMouseLeave={() => {setHover('') & handleChange()}}
+                      >
+                    <GithubSVG props={isHovered === 'github-icon-portfolio'
+                    ? {className:'github-icon-portfolio social-icon', mainFill, backFill}
+                    : {className:'github-icon-portfolio social-icon', mainFill: defaultMainFill, backFill: defaultBackFill}}/>
+                      </a>
+                      <a
+                    target='_blank'
+                    href='https://www.linkedin.com/in/cullan-shewfelt'
+                    title='LinkedIn Profile'
+                    onMouseEnter={() => {setHover('linkedin-icon-portfolio') & handleChange()}}
+                    onMouseLeave={() => {setHover('') & handleChange()}}
+                      >
+                    <LinkedInSVG props={isHovered === 'linkedin-icon-portfolio'
+                    ? {className:'linkedin-icon-portfolio social-icon', mainFill, backFill}
+                    : {className:'linkedin-icon-portfolio social-icon', mainFill: defaultMainFill, backFill: defaultBackFill}}/>
+                      </a>
+                      <a
+                    target='_blank'
+                    href='mailto:cullanrocks@gmail.com'
+                    title='Email Me'
+                    onMouseEnter={() => {setHover('email-icon-portfolio') & handleChange()}}
+                    onMouseLeave={() => {setHover('') & handleChange()}}
+                      >
+                    <EmailSVG props={isHovered === 'email-icon-portfolio'
+                    ? {className:'email-icon-portfolio social-icon', mainFill, backFill}
+                    : {className:'email-icon-portfolio social-icon', mainFill: defaultMainFill, backFill: defaultBackFill}}/>
+                      </a>
+                      <a
+                    target='_blank'
+                    href='https://www.soundcloud.com'
+                    title='Soundcloud'
+                    onMouseEnter={() => {setHover('soundcloud-icon-portfolio') & handleChange()}}
+                    onMouseLeave={() => {setHover('') & handleChange()}}
+                      >
+                    <SoundcloudSVG props={isHovered === 'soundcloud-icon-portfolio'
+                    ? {className:'soundcloud-icon-portfolio social-icon', mainFill, backFill}
+                    : {className:'soundcloud-icon-portfolio social-icon', mainFill: defaultMainFill, backFill: defaultBackFill}}
+                    />
+                      </a>
+                      <br/>
+                    </div>
+                  </article> */}
                 </div>
               </div>
             </div>
