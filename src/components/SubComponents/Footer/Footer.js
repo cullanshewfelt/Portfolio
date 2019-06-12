@@ -30,7 +30,7 @@ const Footer = () => {
         <div className='content has-text-centered'>
           <a
             target='_blank'
-            href='https://www.soundcloud.com'
+            href='https://www.soundcloud.com/cullan-shewfelt'
             title='Soundcloud'
             onMouseEnter={() => {setHover('soundcloud-icon-footer') & handleChange()}}
             onMouseLeave={() => {setHover('') & handleChange()}}

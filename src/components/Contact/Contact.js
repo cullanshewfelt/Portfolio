@@ -79,7 +79,7 @@ const Contact = () => {
               </a>
               <a
                 target='_blank'
-                href='https://www.soundcloud.com'
+                href='https://www.soundcloud.com/cullan-shewfelt'
                 title='Soundcloud'
                 onMouseEnter={() => {setHover('soundcloud-icon') & handleChange()}}
                 onMouseLeave={() => {setHover('') & handleChange()}}
