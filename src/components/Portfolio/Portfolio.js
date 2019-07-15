@@ -219,7 +219,7 @@ const Portfolio = () => {
                     </a>
                     <a
                       target='_blank'
-                      href='mailto:cullanrocks@gmail.com'
+                      href='mailto:cullan.shewfelt@gmail.com'
                       title='Email Me'
                       onMouseEnter={() => {setHover('email-icon-portfolio') & handleChange()}}
                       onMouseLeave={() => {setHover('') & handleChange()}}

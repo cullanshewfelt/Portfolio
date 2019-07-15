@@ -67,7 +67,7 @@ const Contact = () => {
               </a>
               <a
                 target='_blank'
-                href='mailto:cullanrocks@gmail.com'
+                href='mailto:cullan.shewfelt@gmail.com'
                 title='Email Me'
                 onMouseEnter={() => {setHover('email-icon') & handleChange()}}
                 onMouseLeave={() => {setHover('') & handleChange()}}
