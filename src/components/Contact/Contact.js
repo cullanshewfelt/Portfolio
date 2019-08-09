@@ -36,7 +36,7 @@ const Contact = () => {
                   The best way to get in touch with me is via phone or email.
                 </li>
                 <li>
-                  If you'd prefer to communicate by phone I can email you my number.
+                  If you'd prefer to communicate by phone I can email you my number. 
                 </li>
               </ul>
               <br/>
