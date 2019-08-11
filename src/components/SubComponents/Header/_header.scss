@@ -37,6 +37,15 @@
   margin-bottom: 0px;
 }
 
+.navbar-item-close-selected{
+  background-color: $bluish-gray !important;
+  color: black !important;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-top: 60px;
+  margin-bottom: 0px;
+}
+
 a.navbar-item:hover {
   background-color: $bluish-gray;
   color: black;

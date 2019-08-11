@@ -134,7 +134,7 @@ class Header extends React.Component {
             </div>
             <NavLink
               className={`navbar-item ${isHamburgerOpen ? 'navbar-item-open' : 'navbar-item-close'}`}
-              activeClassName='selected'
+              activeClassName='navbar-item-close-selected'
               exact={true}
               to='/'
               onClick={() => {isHamburgerOpen && this.toggleHamburger(!isHamburgerOpen)}}
@@ -146,7 +146,7 @@ class Header extends React.Component {
             </div>
             <NavLink
               className={`navbar-item ${isHamburgerOpen ? 'navbar-item-open' : 'navbar-item-close'}`}
-              activeClassName='selected'
+              activeClassName='navbar-item-close-selected'
               to='/Portfolio'
               onClick={() => {isHamburgerOpen && this.toggleHamburger(!isHamburgerOpen)}}
             >
@@ -157,7 +157,7 @@ class Header extends React.Component {
             </div>
             <NavLink
               className={`navbar-item ${isHamburgerOpen ? 'navbar-item-open' : 'navbar-item-close'}`}
-              activeClassName='selected'
+              activeClassName='navbar-item-close-selected'
               to='/Contact'
               onClick={() => {isHamburgerOpen && this.toggleHamburger(!isHamburgerOpen)}}
             >
