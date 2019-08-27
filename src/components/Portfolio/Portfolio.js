@@ -3,7 +3,7 @@ import Modal from '../Modal/Modal';
 import ReactDOM from 'react-dom';
 const noScroll = require('no-scroll');
 import { disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
-
+import Image from '../SubComponents/Image/Image';
 
 import CapitolHillCongressmanDetails from './images/screenshots/Capitol_Hill_Congressman_Details.png';
 import CapitolHillCongressmanVotes from './images/screenshots/Capitol_Hill_Congressman_Votes.png';
@@ -14,12 +14,18 @@ import CapitolHillMapDetail from './images/screenshots/Capitol_Hill_Map_Detail.p
 import CapitolHillSenatorDetails from './images/screenshots/Capitol_Hill_Senator_Details.png';
 import CapitolHillSenatorVotes from './images/screenshots/Capitol_Hill_Senator_Votes.png';
 
-import DLMusicHomepage from './images/screenshots/DL_Music_Homepage_1.png';
 import DLMusicLibrary from './images/screenshots/DL_Search.png';
+import DLMusicLibraryPH from './images/screenshots/DL_Search_ph.png';
+import DLMusicHomepage from './images/screenshots/DL_Music_Homepage_1.png';
+
 import MetadataMain from './images/screenshots/Metadata_Main.png';
+import MetadataMainPH from './images/screenshots/Metadata_Main_ph.png';
+
 import MetadataKeyword from './images/screenshots/Metadata_Keyword_Search.png';
 import MetadataModalInstruments from './images/screenshots/Metadata_Modal_Instruments.png';
 import MLBAnalysisMain from './images/screenshots/MLB_Analysis_Main.png';
+import MLBAnalysisMainPH from './images/screenshots/MLB_Analysis_Main_ph.png';
+
 import MLBAnalysisRoster from './images/screenshots/MLB_Analysis_Roster.png';
 
 import EmailSVG from '../Icons/EmailSVG';
@@ -127,9 +133,12 @@ const Portfolio = () => {
                   <div className='content'>
                     <h4 className='title has-text-centered'>{dlmusicRework.title}</h4>
                     <hr/>
-                    <img
-                      alt='DL Music Homepage'
-                      src={dlmusicRework.images[0]}
+                    <Image
+                      alt='DL Music Reworked'
+                      height={'100%'}
+                      placeholder={MetadataMainPH}
+                      source={dlmusicRework.images[0]}
+                      throttle={200}
                       title='Click To View Details'
                     />
                   </div>
@@ -145,13 +154,14 @@ const Portfolio = () => {
                   <div className='content'>
                     <h4 className='title has-text-centered'>{capitolHill.title}</h4>
                     <hr/>
-
-                    <img
-                      alt='DL Music Homepage'
-                      src={capitolHill.images[0]}
+                    <Image
+                      alt='Capitol Hill'
+                      height={'100%'}
+                      placeholder={CapitolHillMainPH}
+                      source={capitolHill.images[0]}
+                      throttle={200}
                       title='Click To View Details'
                     />
-
                   </div>
                 </article>
               </div>
@@ -167,9 +177,12 @@ const Portfolio = () => {
                   <div className='content'>
                     <h4 className='title has-text-centered'>{dlmusic.title}</h4>
                     <hr/>
-                    <img
+                    <Image
                       alt='DL Music Homepage'
-                      src={dlmusic.images[0]}
+                      height={'100%'}
+                      placeholder={DLMusicLibraryPH}
+                      source={dlmusic.images[0]}
+                      throttle={200}
                       title='Click To View Details'
                     />
                   </div>
@@ -185,9 +198,12 @@ const Portfolio = () => {
                   <div className='content'>
                     <h4 className='title has-text-centered'>{mlbAnalysis.title}</h4>
                     <hr/>
-                    <img
-                      alt='DL Music Homepage'
-                      src={mlbAnalysis.images[0]}
+                    <Image
+                      alt='MLB Analysis'
+                      height={'100%'}
+                      placeholder={MLBAnalysisMainPH}
+                      source={mlbAnalysis.images[0]}
+                      throttle={200}
                       title='Click To View Details'
                     />
                   </div>
