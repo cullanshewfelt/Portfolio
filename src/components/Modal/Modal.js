@@ -28,13 +28,13 @@ const Modal = (props) => {
   const ModalDescription = () => (
     <div className='project-description'>
       {selectedProject.description.split('. ').map((desc, x) => (
-        <li
+        <div
           className='justified-content'
           key={x}>
           {desc.trim()}
           <br/>
           <br/>
-        </li>
+        </div>
       ))}
       <br/>
       {selectedProject.link &&

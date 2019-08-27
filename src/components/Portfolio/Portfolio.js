@@ -1,4 +1,4 @@
-import React, {Component, useState} from 'react';
+import React, {Component, useState, lazy, Suspense} from 'react';
 import Modal from '../Modal/Modal';
 import ReactDOM from 'react-dom';
 const noScroll = require('no-scroll');
@@ -8,6 +8,7 @@ import { disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks } from 'bo
 import CapitolHillCongressmanDetails from './images/screenshots/Capitol_Hill_Congressman_Details.png';
 import CapitolHillCongressmanVotes from './images/screenshots/Capitol_Hill_Congressman_Votes.png';
 import CapitolHillMain from './images/screenshots/Capitol_Hill_Main.png';
+import CapitolHillMainPH from './images/screenshots/Capitol_Hill_Map_ph.png';
 import CapitolHillMap from './images/screenshots/Capitol_Hill_Map.png';
 import CapitolHillMapDetail from './images/screenshots/Capitol_Hill_Map_Detail.png';
 import CapitolHillSenatorDetails from './images/screenshots/Capitol_Hill_Senator_Details.png';
@@ -144,11 +145,13 @@ const Portfolio = () => {
                   <div className='content'>
                     <h4 className='title has-text-centered'>{capitolHill.title}</h4>
                     <hr/>
+
                     <img
                       alt='DL Music Homepage'
                       src={capitolHill.images[0]}
                       title='Click To View Details'
                     />
+
                   </div>
                 </article>
               </div>
