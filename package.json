@@ -43,7 +43,7 @@
     "js-yaml": "^3.13.1",
     "live-server": "^1.2.1",
     "no-scroll": "^2.1.1",
-    "node-sass": "^4.12.0",
+    "node-sass": "^7.0.0",
     "normalize.css": "^8.0.1",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
